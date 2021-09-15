@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-icons.css">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/hola-land/main.css">
+  <link rel="stylesheet" href="assets/css/hola-land/common.css">
   <link rel="stylesheet" href="assets/css/hola-land/index.css">
   <link rel="stylesheet" href="assets/css/hola-land/grid-index.css">
 </head>
@@ -31,21 +33,21 @@
               <button class="btn-search" type="submit" id="search"><i class="bi bi-search"></i></button>
             </form>
           </li>
-          <li class="dropdown navbar-btn">
-            <a class="icon dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-bell m-0 fa-fw"></i>
+          <li class="navbar-btn dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-bell m-0 fa-fw"></i>
             </a>
-            <span class="c-badge">8</span>
+            <span class="notification-dot">8</span>
             <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
-              <li class="dropdown-item notification-preview">
+              <li class="dropdown-item">
                 <a href="">
                   <div class="media">
                     <span class="me-3">
                       <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
                     </span>
                     <div class="media-body">
-                      <h6 class="media-heading mb-0">John Smith</h6>
-                      <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
                       <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
                     </div>
                   </div>
@@ -58,8 +60,8 @@
                       <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
                     </span>
                     <div class="media-body">
-                      <h6 class="media-heading mb-0">John Smith</h6>
-                      <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
                       <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
                     </div>
                   </div>
@@ -72,8 +74,8 @@
                       <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
                     </span>
                     <div class="media-body">
-                      <h6 class="media-heading mb-0">John Smith</h6>
-                      <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
                       <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
                     </div>
                   </div>
@@ -86,24 +88,41 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown navbar-btn pointer-events-none">
-            <a class="icon dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-caret-down m-0 fa-fw"></i>
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <i class="fas fa-caret-down m-0 fa-fw"></i> -->
+              <i class="far fa-user m-0 fa-fw"></i>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-item">
-                <a href="#">
-                  <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo yêu cầu
-                </a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#">
-                  <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
-                </a>
-              </li>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="userDropdown">
+              <div class="username">
+                <div>
+                  <i class="far fa-user fa-fw"></i>
+                </div>
+                <div>
+                  <span>Đinh Tuấn Anh</span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-eye fa-fw"></i>Trang cá nhân</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Đóng góp ý kiến</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-question-circle fa-fw"></i>Trợ giúp & hỗ trợ</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i>Đăng xuất</a>
             </ul>
           </li>
-          <li class="navbar-btn btn-super-menu">
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="funtionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-caret-down m-0 fa-fw"></i>
+            </a>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="funtionDropdown">
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
+              <a class="dropdown-item" href="#"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Liên hệ & hỗ trợ</a>
+            </ul>
+          </li>
+          <li class="navbar-btn btn-sidebar-menu">
             <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -116,26 +135,25 @@
       <div id="sidebar" class="sidebar">
         <ul class="nav navbar-nav menu">
           <li>
-            <div class="d-flex switch-theme">
+            <div class="switch-theme">
               <div>
-                <span class="label-theme">Switch theme</span>
+                <span class="label-theme"><i class="fas fa-moon fa-fw"></i>Chế độ tối</span>
               </div>
-              <div>
+              <div class="btn-switch-theme">
+                <!-- <input class="form-check-input" type="checkbox" id="switch" /> -->
                 <input class="switch-button" type="checkbox" id="switch" />
                 <label for="switch"></label>
               </div>
             </div>
           </li>
-          <li><a href="#welcome">Welcome</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#soft-skills">Soft Skills</a></li>
-          <li><a href="#technology-skills">Technology Skills</a></li>
-          <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#"><i class="fas fa-university fa-fw"></i>FPT University</a></li>
+          <li><a href="#"><i class="fas fa-graduation-cap fa-fw"></i>Học tập</a></li>
+          <li><a href="#"><i class="fas fa-user-check fa-fw"></i>Công việc</a></li>
+          <li><a href="#"><i class="fas fa-cart-plus fa-fw"></i>Mua sắm</a></li>
+          <li><a href="#"><i class="fas fa-pizza-slice fa-fw"></i>Dịch vụ Ăn - Uống</a></li>
+          <li><a href="#"><i class="fab fa-xbox fa-fw"></i>Vui chơi - Giải trí</a></li>
+          <li><a href="#"><i class="fas fa-bus-alt fa-fw"></i>Di chuyển</a></li>
+          <li><a href="#"><i class="fas fa-bars fa-fw"></i>Khác</a></li>
         </ul>
       </div>
       <!-- End: Sidebar -->
@@ -154,22 +172,22 @@
 
   <div class="container mt-4">
     <div class="row">
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4 m-mb-20">
         <div class="card"></div>
       </div>
     </div>
