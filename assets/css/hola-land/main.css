@@ -20,13 +20,17 @@ html[data-theme='light'] {
   --primary-text: #050505;
   --secondary-text: #65676B;
   /* button-background-color ------------------------- */
+  --navbar-button-background: #DCDFE6;
   --primary-button-background: #FFFFFF;
   --secondary-button-background: #E4E6EB;
   --third-button-background: #D5D6DB;
+  /* sidebar-link-background-hover-color ------------- */
+  --link-button-background: #F2F2F2;
+  --icon-button-background: #E4E6EB;
   /* icon-color -------------------------------------- */
   --primary-icon: #B0B3B8;
   --secondary-icon: #E4E6EB;
-  /* shadow-color -------------------------------------- */
+  /* shadow-color ------------------------------------ */
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 50%);
@@ -44,13 +48,17 @@ html[data-theme='dark'] {
   --primary-text: #E4E6EB;
   --secondary-text: #B0B3B8;
   /* button-background-color ------------------------- */
+  --navbar-button-background: #3A3B3C;
   --primary-button-background: #242526;
   --secondary-button-background: #3A3B3C;
   --third-button-background: #4E4F50;
+  /* sidebar-link-background-hover-color ------------- */
+  --link-button-background: #3A3B3C;
+  --icon-button-background: #4E4F50;
   /* icon-color -------------------------------------- */
   --primary-icon: #B0B3B8;
   --secondary-icon: #E4E6EB;
-  /* shadow-color -------------------------------------- */
+  /* shadow-color ------------------------------------ */
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 5%);

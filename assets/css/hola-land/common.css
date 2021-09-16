@@ -44,7 +44,7 @@
 .navbar .navbar-btn-group .navbar-search>.input-group>input {
   height: 40px;
   border-radius: 25px !important;
-  background-color: var(--secondary-button-background);
+  background-color: var(--navbar-button-background);
   color: var(--primary-text);
   border: none;
   padding: 0 15px;
@@ -55,7 +55,7 @@
   height: 40px;
   width: 40px;
   border-radius: 25px !important;
-  background-color: var(--secondary-button-background);
+  background-color: var(--navbar-button-background);
   color: var(--primary-text);
   border: none;
   z-index: 999;
@@ -79,7 +79,7 @@
 .navbar .navbar-btn-group .navbar-btn {
   width: 40px;
   height: 40px;
-  background-color: var(--secondary-button-background);
+  background-color: var(--navbar-button-background);
   border-radius: 50%;
   margin-left: 8px;
   margin-right: 8px;
@@ -232,7 +232,7 @@
 }
 
 .navbar .navbar-btn-group .navbar-btn .dropdown-menu.navbar-dropdown .dropdown-divider {
-  border-top: 1px solid #3a3b3c;
+  border-top: 1px solid var(--secondary-background);
 }
 
 .navbar .navbar-btn-group .navbar-btn .dropdown-menu.navbar-dropdown .dropdown-item:focus,
@@ -488,10 +488,10 @@
 
 .sidebar>ul>li a:hover {
   /* color: #f1b200; */
-  background-color: var(--secondary-button-background);
+  background-color: var(--link-button-background);
   border-radius: 8px;
 }
 
 .sidebar>ul>li a:hover i {
-  background-color: var(--third-button-background);
+  background-color: var(--icon-button-background);
 }
