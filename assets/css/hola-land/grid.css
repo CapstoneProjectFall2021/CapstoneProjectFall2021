@@ -9,6 +9,27 @@
   float: right;
 }
 
+.form-row>.col,
+.form-row>[class*=col-] {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.container-fluid {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
 @media (max-width: 991.98px) {
   .left {
     width: 100%;
@@ -24,27 +45,15 @@
   .right {
     margin-top: 0;
   }
-}
-
-.form-row>.col,
-.form-row>[class*=col-] {
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.container {
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
-.row {
-  margin-right: -.5rem;
-  margin-left: -.5rem;
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block !important;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .col,
@@ -131,15 +140,6 @@
 .col-xxl-11,
 .col-xxl-12,
 .col-xxl-auto {
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
-pre {
-  white-space: pre-wrap;
-  font-size: .95rem;
-  color: #bdbdbd;
-  margin-bottom: 0;
-  line-height: 1.55rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding-right: 10px;
+  padding-left: 10px;
 }

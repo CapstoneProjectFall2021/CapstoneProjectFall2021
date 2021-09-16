@@ -16,7 +16,9 @@ html[data-theme='light'] {
   --secondary-background: #F0F2F5;
   /* border-color ------------------------------------ */
   --primary-border-color: #EBEBEB;
+  --secondary-border-color: #F0F2F5;
   /* text-color -------------------------------------- */
+  --main-text: #1ba80e;
   --primary-text: #050505;
   --secondary-text: #65676B;
   /* button-background-color ------------------------- */
@@ -24,6 +26,7 @@ html[data-theme='light'] {
   --primary-button-background: #FFFFFF;
   --secondary-button-background: #E4E6EB;
   --third-button-background: #D5D6DB;
+  --label-button-background: #FFFFFF;
   /* sidebar-link-background-hover-color ------------- */
   --link-button-background: #F2F2F2;
   --icon-button-background: #E4E6EB;
@@ -43,8 +46,11 @@ html[data-theme='dark'] {
   --primary-background: #242526;
   --secondary-background: #3A3B3C;
   /* border-color ------------------------------------ */
-  --primary-border-color: #3A3B3C;
+  /* --primary-border-color: #3A3B3C; */
+  --primary-border-color: #242526;
+  --secondary-border-color: #3A3B3C;
   /* text-color -------------------------------------- */
+  --main-text: #1ba80e;
   --primary-text: #E4E6EB;
   --secondary-text: #B0B3B8;
   /* button-background-color ------------------------- */
@@ -52,6 +58,7 @@ html[data-theme='dark'] {
   --primary-button-background: #242526;
   --secondary-button-background: #3A3B3C;
   --third-button-background: #4E4F50;
+  --label-button-background: #3A3B3C;
   /* sidebar-link-background-hover-color ------------- */
   --link-button-background: #3A3B3C;
   --icon-button-background: #4E4F50;
@@ -71,6 +78,8 @@ body {
   align-items: center;
   justify-items: center;
   height: 100%;
+  transition: 0.5s;
+  padding-bottom: 100px;
 }
 
 a,
@@ -82,4 +91,35 @@ i.far,
 i.fas,
 i.fab {
   margin-right: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: .95rem;
+  color: #bdbdbd;
+  margin-bottom: 0;
+  line-height: 1.55rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.table {
+  color: var(--primary-text);
+  border-color: var(--secondary-border-color);
+}
+
+th {
+  font-weight: 500;
+}
+
+td {
+  color: var(--secondary-text);
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: var(--secondary-border-color) !important;
 }
