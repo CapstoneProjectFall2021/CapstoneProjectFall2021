@@ -1,11 +1,11 @@
 .left {
   overflow: hidden;
   position: absolute;
-  width: 17rem;
+  width: 250px;
 }
 
 .right {
-  width: calc(100% - 17rem - 1rem);
+  width: calc(100% - 250px - 20px);
   float: right;
 }
 

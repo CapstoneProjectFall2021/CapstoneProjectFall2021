@@ -28,7 +28,8 @@ html[data-theme='light'] {
   --third-button-background: #D5D6DB;
   --label-button-background: #FFFFFF;
   /* sidebar-link-background-hover-color ------------- */
-  --link-button-background: #F2F2F2;
+  --link-primary-button-background: #F2F2F2;
+  --link-secondary-button-background: #F2F2F2;
   --icon-button-background: #E4E6EB;
   /* icon-color -------------------------------------- */
   --primary-icon: #B0B3B8;
@@ -60,7 +61,8 @@ html[data-theme='dark'] {
   --third-button-background: #4E4F50;
   --label-button-background: #3A3B3C;
   /* sidebar-link-background-hover-color ------------- */
-  --link-button-background: #3A3B3C;
+  --link-primary-button-background: #242526;
+  --link-secondary-button-background: #3A3B3C;
   --icon-button-background: #4E4F50;
   /* icon-color -------------------------------------- */
   --primary-icon: #B0B3B8;
@@ -80,6 +82,7 @@ body {
   height: 100%;
   transition: 0.5s;
   padding-bottom: 100px;
+  font-size: 16px;
 }
 
 a,
