@@ -4,8 +4,12 @@
   box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 50%);
 }
 
-.fix-mt {
-  margin-top: 120px;
+.fix-mt-title {
+  margin-top: 30px !important;
+}
+
+.fix-mb-title {
+  margin-bottom: 40px !important;
 }
 
 .fix-pd {
@@ -581,8 +585,11 @@
 }
 
 @media (max-width: 575.98px) {
-  .fix-mt {
-    margin-top: 15px;
+  .fix-mt-title {
+    margin-top: 30px !important;
+  }
+  .fix-mb-title {
+    margin-bottom: 30px !important;
   }
   /* Navbar */
   .navbar {
