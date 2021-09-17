@@ -21,6 +21,10 @@ if (theme === 'dark') {
   changeThemeToDark();
 }
 
+if (theme === 'light') {
+  changeThemeToLight();
+}
+
 checkbox.addEventListener('change', () => {
   let theme = localStorage.getItem('data-theme');
   if (theme === 'dark') {
