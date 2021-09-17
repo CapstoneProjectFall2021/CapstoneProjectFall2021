@@ -4,13 +4,13 @@
 }
 
 .carousel-inner {
-  border-radius: 12px;
+  border-radius: var(--primary-border-radius);
   border: 1px solid var(--primary-border-color);
 }
 
 .carousel-inner .banner {
   padding: 25px;
-  border-radius: 10px;
+  border-radius: var(--primary-border-radius);
   background-color: var(--primary-background);
 }
 
@@ -30,7 +30,7 @@
 
 .menu-feature a.card-feature {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--primary-border-radius);
   background-color: var(--primary-button-background);
   border: 1px solid var(--primary-border-color);
   color: var(--primary-text);

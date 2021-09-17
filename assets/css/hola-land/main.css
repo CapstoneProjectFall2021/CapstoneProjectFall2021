@@ -38,6 +38,9 @@ html[data-theme='light'] {
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 50%);
+  --primary-border-radius: 12px;
+  --secondary-border-radius: 10px;
+  --third-border-radius: 8px;
 }
 
 html[data-theme='dark'] {
@@ -71,6 +74,9 @@ html[data-theme='dark'] {
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 5%);
+  --primary-border-radius: 12px;
+  --secondary-border-radius: 10px;
+  --third-border-radius: 8px;
 }
 
 body {
@@ -81,7 +87,6 @@ body {
   justify-items: center;
   height: 100%;
   transition: 0.5s;
-  padding-bottom: 100px;
   font-size: 16px;
 }
 
