@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .col-left,
   .col-right {
     padding-top: 100px;
