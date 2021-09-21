@@ -41,6 +41,7 @@
 }
 
 .club-info .modal-content .modal-body .description p,
+.club-info .modal-content .modal-body .description .pre,
 .club-info .modal-content .modal-body .description .contact {
   background-color: var(--secondary-background);
   padding: 15px 20px;

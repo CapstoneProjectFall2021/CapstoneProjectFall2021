@@ -18,7 +18,7 @@ html[data-theme='light'] {
   --primary-background: #FFFFFF;
   --secondary-background: #F0F2F5;
   /* border-color ------------------------------------ */
-  --primary-border-color: #EBEBEB;
+  --primary-border-color: transparent;
   --secondary-border-color: #F0F2F5;
   /* text-color -------------------------------------- */
   --main-text: #1BA80E;
@@ -30,7 +30,7 @@ html[data-theme='light'] {
   --primary-button-background: #FFFFFF;
   --secondary-button-background: #E4E6EB;
   --third-button-background: #D5D6DB;
-  --label-button-background: #FFFFFF;
+  --label-button-background: #DCDFE6;
   /* sidebar-link-background-hover-color ------------- */
   --link-primary-button-background: #F2F2F2;
   --link-secondary-button-background: #F2F2F2;
@@ -57,7 +57,7 @@ html[data-theme='dark'] {
   --secondary-background: #3A3B3C;
   /* border-color ------------------------------------ */
   /* --primary-border-color: #3A3B3C; */
-  --primary-border-color: #242526;
+  --primary-border-color: transparent;
   --secondary-border-color: #3A3B3C;
   /* text-color -------------------------------------- */
   --main-text: #1ba80e;
@@ -121,11 +121,10 @@ i.fab {
 
 pre {
   white-space: pre-wrap;
-  font-size: .95rem;
-  color: #bdbdbd;
+  font-size: 16px;
+  color: var(--secondary-text);
   margin-bottom: 0;
-  line-height: 1.55rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font);
 }
 
 .table {
