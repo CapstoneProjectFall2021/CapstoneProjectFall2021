@@ -22,7 +22,7 @@ html[data-theme='light'] {
   --secondary-border-color: #F0F2F5;
   /* text-color -------------------------------------- */
   --main-text: #1ba80e;
-  --accent-text: #FFC107;
+  --accent-text: #1ba80e;
   --primary-text: #050505;
   --secondary-text: #65676B;
   /* button-background-color ------------------------- */
@@ -42,7 +42,7 @@ html[data-theme='light'] {
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 50%);
-  --shadow-button: rgb(255 193 7 / 35%);
+  --shadow-button: rgb(27 168 14 / 35%);
   /* border-radius ------------------------------------ */
   --primary-border-radius: 12px;
   --secondary-border-radius: 10px;

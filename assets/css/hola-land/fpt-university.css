@@ -37,7 +37,7 @@
 }
 
 .club-info .modal-content .modal-body .img img:hover {
-  transform: scale(1.02, 1.02);
+  transform: scale(1.01, 1.01);
 }
 
 .club-info .modal-content .modal-body .description p,
@@ -46,6 +46,7 @@
   padding: 15px 20px;
   border-radius: 12px;
   color: var(--secondary-text);
+  margin-bottom: 18px;
 }
 
 .club-info .modal-content .modal-body .description .row-info {
@@ -53,5 +54,5 @@
   align-items: center;
   justify-content: space-between;
   color: var(--secondary-text);
-  margin-top: 5px;
+  margin-top: 4px;
 }

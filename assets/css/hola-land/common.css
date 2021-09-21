@@ -289,7 +289,7 @@
 
 .navbar .navbar-btn-group .navbar-btn .dropdown-menu.navbar-dropdown .dropdown-item:focus,
 .navbar .navbar-btn-group .navbar-btn .dropdown-menu.navbar-dropdown .dropdown-item:hover {
-  color: #ffc107;
+  color: var(--accent-text);
   background-color: transparent;
   transform: translateX(6px);
 }
@@ -600,7 +600,7 @@
 }
 
 .label-info {
-  padding: 20px 20px 16px;
+  padding: 20px 20px 15px;
   display: block;
   border-radius: var(--primary-border-radius);
   background-color: var(--primary-button-background);
@@ -637,7 +637,7 @@
 }
 
 .label-info .description {
-  margin-top: 12px;
+  margin-top: 8px;
   color: var(--secondary-text);
 }
 
@@ -675,16 +675,34 @@
 }
 
 .modal-content .modal-header .modal-title {
-  font-weight: var(--font-weight-4)
+  font-weight: var(--font-weight-4);
+  font-size: 22px;
 }
 
 .modal-content .modal-body {
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .modal-content .modal-footer {
   border-top: 1px solid transparent;
   padding: 16px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background-color: var(--primary-background);
+  border-radius: .5rem;
+  border: 1px solid var(--secondary-border-color);
+}
+
+.modal-body::-webkit-scrollbar {
+  width: .55rem;
+  background-color: var(--secondary-background);
+  border-radius: .5rem;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-border-color);
+  border-radius: 10px;
 }
 
 
