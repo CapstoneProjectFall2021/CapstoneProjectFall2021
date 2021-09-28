@@ -12,8 +12,9 @@
 
 .club-info .modal-content .modal-body .img img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--primary-border-radius);
   transition: 0.5s;
+  margin-bottom: 18px;
 }
 
 .club-info .modal-content .modal-body .img img:hover {
@@ -25,7 +26,7 @@
 .club-info .modal-content .modal-body .description .contact {
   background-color: var(--secondary-background);
   padding: 15px 20px;
-  border-radius: 12px;
+  border-radius: var(--primary-border-radius);
   color: var(--secondary-text);
   margin-bottom: 18px;
 }

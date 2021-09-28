@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* List club */
+/* List jobs */
 
 .list-jobs .label-info .flex {
   justify-content: start;
@@ -16,4 +16,51 @@
 .list-jobs .label-info .flex .name .job-info {
   display: flex;
   justify-content: space-between;
+}
+
+
+/* Job detail */
+
+.job-detail .job-title h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: var(--font-weight-4);
+}
+
+.job-detail .job-title p {
+  margin-bottom: 0;
+  color: var(--secondary-text);
+}
+
+.job-detail .job-title .apply-area {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.job-detail .job-title .apply-area .apply-area-btn {
+  width: 100%;
+}
+
+.job-detail .job-title .btn-apply a,
+.job-detail .job-title .btn-save-job a {
+  font-weight: var(--font-weight-5);
+  font-size: 14px;
+  width: 100%;
+}
+
+.job-detail .row-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary-text);
+}
+
+
+/* Responsive ========================================================================================================*/
+
+@media (max-width: 1200px) {
+  .job-detail .job-title .btn-apply {
+    margin-top: 20px;
+  }
 }

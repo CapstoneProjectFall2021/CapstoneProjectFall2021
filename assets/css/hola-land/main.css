@@ -12,7 +12,7 @@ html {
 }
 
 html[data-theme='light'] {
-  --switch-color: #1BA80E;
+  --switch-color: #198653;
   /* background-color -------------------------------- */
   --body-background: #F0F2F5;
   --primary-background: #FFFFFF;
@@ -116,7 +116,7 @@ a:hover {
 i.far,
 i.fas,
 i.fab {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 pre {
