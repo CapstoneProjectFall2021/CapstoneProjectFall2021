@@ -37,7 +37,7 @@
   background-color: var(--primary-button-background);
   border: 1px solid var(--primary-border-color);
   color: var(--primary-text);
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   padding: 20px;

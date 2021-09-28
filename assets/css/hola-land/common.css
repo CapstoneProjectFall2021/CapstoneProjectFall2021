@@ -44,7 +44,7 @@
   padding: 20px;
 }
 
-.online {
+.highlight {
   color: var(--main-text);
 }
 
@@ -499,7 +499,7 @@
 /* Sidebar link */
 
 .sidebar>ul>li a {
-  font-weight: 400;
+  font-weight: var(--font-weight-4);
   font-size: 16px;
   padding: 8px 10px;
   letter-spacing: 1px;
@@ -539,7 +539,7 @@
 
 .col-left>ul.sub-menu>li a {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px 10px;
   letter-spacing: 1px;
   transition: 0.2s;
@@ -553,8 +553,8 @@
 }
 
 .col-left>ul.sub-menu>li a i {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background-color: var(--secondary-button-background);
   border-radius: 50%;
   margin-right: 12px;
@@ -599,8 +599,11 @@
   margin-bottom: 20px;
 }
 
+
+/**/
+
 .label-info {
-  padding: 20px 20px 14px;
+  padding: 18px 20px 12px;
   display: block;
   border-radius: var(--primary-border-radius);
   background-color: var(--primary-button-background);
@@ -628,11 +631,11 @@
 }
 
 .label-info .flex .icon i {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .label-info .flex .number h4 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 8px;
@@ -643,8 +646,33 @@
   color: var(--secondary-text);
 }
 
-.label-info .description span {
-  color: var(--main-text);
+
+/**/
+
+.label-info .flex .icon img {
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  width: 63px;
+  height: 63px;
+}
+
+.label-info .flex .name {
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.label-info .flex .name h4 {
+  font-size: 16px;
+  font-weight: var(--font-weight-4);
+  margin-bottom: 0;
+}
+
+.label-info .flex .name p {
+  font-size: 14px;
+  color: var(--secondary-text);
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* List club */
+
+.list-jobs .label-info .flex {
+  justify-content: start;
+}
+
+.label-info .flex .name h4 {
+  /* white-space: nowrap!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  width: 80%; */
+}
+
+.list-jobs .label-info .flex .name .job-info {
+  display: flex;
+  justify-content: space-between;
+}
