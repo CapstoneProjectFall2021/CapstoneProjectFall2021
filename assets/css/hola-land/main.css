@@ -23,6 +23,7 @@ html[data-theme='light'] {
   /* text-color -------------------------------------- */
   --main-text: #1BA80E;
   --accent-text: #1BA80E;
+  --danger-text: #E25563;
   --primary-text: #050505;
   --secondary-text: #65676B;
   /* button-background-color ------------------------- */
@@ -61,6 +62,7 @@ html[data-theme='dark'] {
   --secondary-border-color: #3A3B3C;
   /* text-color -------------------------------------- */
   --main-text: #1ba80e;
+  --danger-text: #B02F3B;
   --accent-text: #FFC107;
   --primary-text: #E4E6EB;
   --secondary-text: #B0B3B8;
@@ -116,7 +118,7 @@ a:hover {
 i.far,
 i.fas,
 i.fab {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 pre {

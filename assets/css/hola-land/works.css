@@ -6,14 +6,20 @@
   justify-content: start;
 }
 
-.label-info .flex .name h4 {
-  /* white-space: nowrap!important;
+
+/* .label-info .flex .content-body h4 {
+  white-space: nowrap!important;
   overflow: hidden!important;
   text-overflow: ellipsis!important;
-  width: 80%; */
+  width: 80%;
+} */
+
+.list-jobs .label-info .flex .content-body .job-info {
+  display: flex;
+  justify-content: space-between;
 }
 
-.list-jobs .label-info .flex .name .job-info {
+.list-jobs .panel .flex .content-body .job-info {
   display: flex;
   justify-content: space-between;
 }
@@ -55,6 +61,9 @@
   justify-content: space-between;
   color: var(--secondary-text);
 }
+
+
+/* Job save */
 
 
 /* Responsive ========================================================================================================*/

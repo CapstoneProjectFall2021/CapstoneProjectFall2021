@@ -171,18 +171,23 @@
           </div>
           <ul class="nav navbar-nav sub-menu">
             <li>
-              <a href="#">
+              <a href="jobs.html">
                 <i class="fas fa-list-ul fa-fw"></i>Danh sách việc làm
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="jobs-apply.html">
                 <i class="fas fa-tasks fa-fw"></i>Danh sách ứng tuyển
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="jobs-save.html">
                 <i class="far fa-bookmark fa-fw"></i>Việc làm đã lưu
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-pencil-alt fa-fw"></i>Viết bài tìm việc
               </a>
             </li>
             <li>
@@ -206,18 +211,18 @@
                   <div class="row">
                     <div class="col-md-12 col-lg-12 col-xl-9">
                       <h3>Giáo Viên Tiếng Anh Online/Offline</h3>
-                      <p><i class="fas fa-map-marker-alt fa-fw"></i>Địa điểm: 27 Thái Thịnh,Đống Đa, Hà Nội</p>
+                      <p><i class="fas fa-map-marker-alt fa-fw"></i>Địa điểm: 27 Thái Thịnh, Đống Đa, Hà Nội</p>
                       <p><i class="far fa-clock fa-fw"></i>Hạn nộp hồ sơ: 23/12/2021</p>
                     </div>
                     <div class="col-md-12 col-lg-12 col-xl-3 apply-area">
                       <div class="apply-area-btn">
                         <div class="btn-apply">
-                          <a href="#" class="btn btn-md btn-success m-mb-15">
+                          <a href="javascript:void(0)" class="btn btn-md btn-success m-mb-15" data-bs-toggle="modal" data-bs-target="#confirmApplyJobModal">
                             ỨNG TUYỂN NGAY
                           </a>
                         </div>
                         <div class="btn-save-job">
-                          <a href="#" class="btn btn-md btn-secondary">
+                          <a href="javascript:void(0)" class="btn btn-md btn-secondary" onclick="showToast()">
                             <i class="far fa-bookmark fa-fw"></i>LƯU TIN
                           </a>
                         </div>
@@ -245,7 +250,7 @@
                   </div>
                   <div class="row-info">
                     <div><i class="fas fa-user-plus fa-fw"></i>Yêu cầu kinh nghiệm</div>
-                    <div>Không</div>
+                    <div>Không yêu cầu</div>
                   </div>
                   <div class="row-info">
                     <div><i class="fas fa-venus-mars fa-fw"></i>Yêu cầu giới tính</div>
@@ -256,7 +261,7 @@
                 <div class="panel-text">
                   <pre>
 - Giảng dạy các khóa học của hệ thống: TOEIC 4 kỹ năng; Luyện Thi IELTS; Tiếng Anh Giao tiếp theo hình thức online/offline.
-- Giảng dạy các dự án lớn chuẩn đầu ra TOEIC, IELTS cho các Tổng công ty, Tập đoàn Việt Nam là khách hàng, đối tác của Công ty.
+- Giảng dạy các dự án lớn chuẩn đầu ra TOEIC, IELTS cho các Tổng công ty, Tập đoàn là khách hàng, đối tác của Công ty.
 - Giảng dạy theo ca từ thứ Hai đến thứ Bảy hàng tuần trên hệ thống trực tuyến E Bomb của Công ty.</pre>
                 </div>
                 <h2 class="sub-title-small">Yêu cầu</h2>
@@ -287,8 +292,47 @@
     </div>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="confirmApplyJobModal" tabindex="-1" aria-labelledby="confirmApplyJobModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmApplyJobModalLabel">Thông báo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Xác nhận ứng tuyển việc làm?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success mr-2"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="test-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000" data-bs-animation="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Lưu tin thành công!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/hola-land/hola-land.js"></script>
+  <script>
+    function showToast() {
+      const toast = new bootstrap.Toast(document.getElementById('test-toast'));
+      toast.show();
+    }
+  </script>
 </body>
 
 </html>
