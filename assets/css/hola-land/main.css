@@ -43,7 +43,8 @@ html[data-theme='light'] {
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 50%);
-  --shadow-button: rgb(27 168 14 / 35%);
+  /* --shadow-button: rgb(27 168 14 / 35%); */
+  --shadow-button: rgb(228 230 235 / 55%);
   /* border-radius ------------------------------------ */
   --primary-border-radius: 12px;
   --secondary-border-radius: 10px;
@@ -83,7 +84,8 @@ html[data-theme='dark'] {
   --shadow-1: rgb(0 0 0 / 10%);
   --shadow-2: rgb(0 0 0 / 20%);
   --shadow-inset: rgb(255 255 255 / 5%);
-  --shadow-button: rgb(255 193 7 / 35%);
+  /* --shadow-button: rgb(255 193 7 / 35%); */
+  --shadow-button: rgb(58 59 60 / 55%);
   /* border-radius ------------------------------------ */
   --primary-border-radius: 12px;
   --secondary-border-radius: 10px;

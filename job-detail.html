@@ -186,7 +186,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="job-post.html">
                 <i class="fas fa-pencil-alt fa-fw"></i>Viết bài tìm việc
               </a>
             </li>
@@ -211,19 +211,19 @@
                   <div class="row">
                     <div class="col-md-12 col-lg-12 col-xl-9">
                       <h3>Giáo Viên Tiếng Anh Online/Offline</h3>
-                      <p><i class="fas fa-map-marker-alt fa-fw"></i>Địa điểm: 27 Thái Thịnh, Đống Đa, Hà Nội</p>
                       <p><i class="far fa-clock fa-fw"></i>Hạn nộp hồ sơ: 23/12/2021</p>
+                      <p><i class="fas fa-map-marker-alt fa-fw"></i>Địa điểm: 27 Thái Thịnh, Đống Đa, Hà Nội</p>
                     </div>
                     <div class="col-md-12 col-lg-12 col-xl-3 apply-area">
                       <div class="apply-area-btn">
                         <div class="btn-apply">
-                          <a href="javascript:void(0)" class="btn btn-md btn-success m-mb-15" data-bs-toggle="modal" data-bs-target="#confirmApplyJobModal">
+                          <a href="javascript:void(0)" class="btn btn-md btn-success" data-bs-toggle="modal" data-bs-target="#confirmApplyJobModal">
                             ỨNG TUYỂN NGAY
                           </a>
                         </div>
                         <div class="btn-save-job">
-                          <a href="javascript:void(0)" class="btn btn-md btn-secondary" onclick="showToast()">
-                            <i class="far fa-bookmark fa-fw"></i>LƯU TIN
+                          <a id="btn-save-job" href="javascript:void(0)" class="btn btn-md btn-secondary m-mt-15" onclick="showToast()">
+                            <i id="icon-save-job" class="far fa-bookmark fa-fw"></i><span id="label-save-job">LƯU TIN</span>
                           </a>
                         </div>
                       </div>
@@ -312,6 +312,21 @@
     </div>
   </div>
 
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/hola-land/hola-land.js"></script>
+  <script>
+    function showToast() {
+      const toast = new bootstrap.Toast(document.getElementById('test-toast'));
+      toast.show();
+      document.getElementById("label-save-job").innerHTML = "ĐÃ LƯU";
+      document.getElementById("icon-save-job").classList.remove('far');
+      document.getElementById("icon-save-job").classList.add('fas');
+      document.getElementById("btn-save-job").onclick = function(e) {
+        e.defaultPrevented();
+      }
+    }
+  </script>
+
   <!-- Toast -->
   <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
     <div id="test-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000" data-bs-animation="true">
@@ -323,15 +338,6 @@
       </div>
     </div>
   </div>
-
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/hola-land/hola-land.js"></script>
-  <script>
-    function showToast() {
-      const toast = new bootstrap.Toast(document.getElementById('test-toast'));
-      toast.show();
-    }
-  </script>
 </body>
 
 </html>
