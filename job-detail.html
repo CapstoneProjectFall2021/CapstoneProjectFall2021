@@ -116,8 +116,8 @@
               <i class="fas fa-caret-down m-0 fa-fw"></i>
             </a>
             <ul class="dropdown-menu navbar-dropdown" aria-labelledby="funtionDropdown">
-              <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
-              <a class="dropdown-item" href="#"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
+              <a class="dropdown-item" href="signin.html"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
+              <a class="dropdown-item" href="signin.html"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Liên hệ & hỗ trợ</a>
             </ul>
@@ -222,7 +222,7 @@
                           </a>
                         </div>
                         <div class="btn-save-job">
-                          <a id="btn-save-job" href="javascript:void(0)" class="btn btn-md btn-secondary m-mt-15" onclick="showToast()">
+                          <a id="btn-save-job" href="javascript:void(0)" class="btn btn-md btn-secondary m-mt-15" onclick="save()">
                             <i id="icon-save-job" class="far fa-bookmark fa-fw"></i><span id="label-save-job">LƯU TIN</span>
                           </a>
                         </div>
@@ -315,9 +315,31 @@
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/hola-land/hola-land.js"></script>
   <script>
-    function showToast() {
-      const toast = new bootstrap.Toast(document.getElementById('test-toast'));
-      toast.show();
+    function save() {
+      // Tạo đổi tượng XMLHttpRequest
+      var request = new XMLHttpRequest();
+
+      // Khởi tạo đối tượng yêu cầu
+      request.open("GET", "https://anest-hl-backend.herokuapp.com/course/1", false);
+
+      // Định nghĩa một hàm được gọi cho readystatechange
+      request.onreadystatechange = function() {
+        // Kiểm tra xem yêu cầu đã hoàn thành và thành công chưa
+        if (this.readyState === 4 && this.status === 200) {
+          // Chèn phản hồi từ máy chủ vào một phần tử HTML
+          // document.getElementById("result").innerHTML = this.responseText;
+          setStateBtnSaveJob();
+          showToast('test-toast');
+        } else {
+          alert("ERROR");
+        }
+      };
+
+      // Gửi yêu cầu đến máy chủ
+      request.send();
+    }
+
+    function setStateBtnSaveJob() {
       document.getElementById("label-save-job").innerHTML = "ĐÃ LƯU";
       document.getElementById("icon-save-job").classList.remove('far');
       document.getElementById("icon-save-job").classList.add('fas');
@@ -325,16 +347,21 @@
         e.defaultPrevented();
       }
     }
+
+    function showToast(id) {
+      const toast = new bootstrap.Toast(document.getElementById(id));
+      toast.show();
+    }
   </script>
 
-  <!-- Toast -->
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <!-- Toast success -->
+  <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
     <div id="test-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000" data-bs-animation="true">
       <div class="d-flex">
         <div class="toast-body">
           Lưu tin thành công!
         </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white me-3 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
   </div>

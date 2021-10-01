@@ -19,7 +19,7 @@ html[data-theme='light'] {
   --secondary-background: #F0F2F5;
   /* border-color ------------------------------------ */
   --primary-border-color: transparent;
-  --secondary-border-color: #F0F2F5;
+  --secondary-border-color: #E4E6EB;
   /* text-color -------------------------------------- */
   --main-text: #1BA80E;
   --accent-text: #1BA80E;
@@ -63,8 +63,8 @@ html[data-theme='dark'] {
   --secondary-border-color: #3A3B3C;
   /* text-color -------------------------------------- */
   --main-text: #1ba80e;
-  --danger-text: #B02F3B;
   --accent-text: #FFC107;
+  --danger-text: #B02F3B;
   --primary-text: #E4E6EB;
   --secondary-text: #B0B3B8;
   /* button-background-color ------------------------- */

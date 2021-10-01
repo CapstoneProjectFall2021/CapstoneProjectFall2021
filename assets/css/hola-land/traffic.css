@@ -91,6 +91,10 @@
   margin-top: 5px;
 }
 
+.list-motorbike-taxi-drivers .label-info:hover .description .row-info {
+  color: var(--primary-text);
+}
+
 .list-motorbike-taxi-drivers .label-info .description .row-info i.far,
 .list-motorbike-taxi-drivers .label-info .description .row-info i.fas,
 .list-motorbike-taxi-drivers .label-info .description .row-info i.fab {
