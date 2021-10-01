@@ -134,6 +134,7 @@ pre {
 .table {
   color: var(--primary-text);
   border-color: var(--secondary-border-color);
+  margin-bottom: 0;
 }
 
 th {

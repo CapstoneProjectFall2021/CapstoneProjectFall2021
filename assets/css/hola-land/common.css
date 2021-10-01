@@ -12,7 +12,7 @@
 }
 
 .fix-mb-title {
-  margin-bottom: 40px !important;
+  margin-bottom: 30px !important;
 }
 
 .fix-pd {
@@ -21,20 +21,20 @@
 
 .title {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: var(--font-weight-4);
   margin-bottom: 0;
 }
 
 .sub-title {
-  font-size: 24px;
-  margin: 20px;
-  font-weight: 400;
+  font-size: 20px;
+  margin: 0 20px 15px 20px;
+  font-weight: var(--font-weight-4);
 }
 
 .sub-title-small {
   font-size: 18px;
   margin: 0 20px 15px 20px;
-  font-weight: 400;
+  font-weight: var(--font-weight-4);
 }
 
 .highlight {
