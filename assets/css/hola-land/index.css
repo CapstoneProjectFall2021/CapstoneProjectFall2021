@@ -38,7 +38,7 @@
   border: 1px solid var(--primary-border-color);
   color: var(--primary-text);
   font-size: 18px;
-  padding: 20px;
+  padding: 18px 20px;
   transition: 0.4s;
   display: block;
   position: relative;
