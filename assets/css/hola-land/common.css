@@ -684,7 +684,7 @@
 }
 
 .tags .tag {
-  padding: 6px 12px;
+  padding: 5px 12px;
   background-color: var(--secondary-background);
   border-radius: var(--third-border-radius);
   color: var(--secondary-text);
@@ -755,15 +755,16 @@
 }
 
 .label-info .flex .number h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 8px;
 }
 
 .label-info .description {
-  margin-top: 3px;
+  margin-top: 3.5px;
   color: var(--secondary-text);
+  font-size: 14px;
 }
 
 .label-info .btn-remove {
