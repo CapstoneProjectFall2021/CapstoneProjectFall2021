@@ -683,6 +683,29 @@
   }
 }
 
+.tags .tag {
+  padding: 6px 12px;
+  background-color: var(--secondary-background);
+  border-radius: var(--third-border-radius);
+  color: var(--secondary-text);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 6px;
+  transition: 0.4s;
+}
+
+.label-info:hover .tags .tag {
+  background-color: var(--primary-button-background);
+}
+
+@media (max-width: 992px) {
+  .tags .tag {
+    margin-right: 2px;
+    margin-bottom: 6px;
+  }
+}
+
 
 /* Label info - Panel ================================================================================================*/
 
@@ -716,6 +739,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .label-info {
+    padding: 14px 15px 8px;
+  }
 }
 
 
@@ -792,8 +821,9 @@
 .label-info .flex .content-body p {
   font-size: 14px;
   color: var(--secondary-text);
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 
@@ -817,6 +847,15 @@
   color: var(--primary-text);
   padding: 15px 20px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .panel {
+    padding: 15px;
+  }
+  .panel-text {
+    padding: 10px 15px;
+  }
 }
 
 
