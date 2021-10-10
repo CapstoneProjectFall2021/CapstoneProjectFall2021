@@ -163,128 +163,132 @@
   <div style="overflow: hidden;">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3 col-left">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="title fix-pd fix-mb-title">Menu</h1>
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
             </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="profile.html">
+                  <i class="fas fa-user fa-fw"></i>Trang cá nhân
+                </a>
+              </li>
+              <li>
+                <a href="profile-update.html">
+                  <i class="fas fa-user-edit fa-fw"></i>Chỉnh sửa thông tin
+                </a>
+              </li>
+              <li>
+                <a href="profile-notification.html">
+                  <i class="far fa-bell fa-fw"></i>Thông báo
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-chevron-left fa-fw"></i>Quay lại
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="nav navbar-nav sub-menu">
-            <li>
-              <a href="profile.html">
-                <i class="fas fa-user fa-fw"></i>Trang cá nhân
-              </a>
-            </li>
-            <li>
-              <a href="profile-update.html">
-                <i class="fas fa-user-edit fa-fw"></i>Chỉnh sửa thông tin
-              </a>
-            </li>
-            <li>
-              <a href="profile-notification.html">
-                <i class="far fa-bell fa-fw"></i>Thông báo
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-chevron-left fa-fw"></i>Quay lại
-              </a>
-            </li>
-          </ul>
         </div>
-        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9 col-right">
-          <!-- Profile -->
-          <div class="profile-info">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="title fix-mb-title">Chỉnh sửa thông tin</h1>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+            <!-- Profile -->
+            <div class="profile-info">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title">Chỉnh sửa thông tin</h1>
+                </div>
               </div>
-            </div>
-            <form class="row panel-form mx-0">
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Họ và tên</legend>
-                  <input type="text" class="form-control" value="Nguyễn Văn A">
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Ngày sinh</legend>
-                  <input type="date" class="form-control" value="11/11/1994">
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Giới tính</legend>
-                  <div class="gender-radio">
-                    <div class="form-check me-4">
-                      <input class="form-check-input me-2" type="radio" name="gender" id="male" value="1">
-                      <label class="form-check-label" for="male">Nam</label>
+              <form class="row panel-form mx-0">
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Họ và tên</legend>
+                    <input type="text" class="form-control" value="Nguyễn Văn A">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Ngày sinh</legend>
+                    <input type="date" class="form-control" value="11/11/1994">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Giới tính</legend>
+                    <div class="custom-radio">
+                      <div class="form-check me-4">
+                        <input class="form-check-input me-2" type="radio" name="gender" id="male" value="1">
+                        <label class="form-check-label" for="male">Nam</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input me-2" type="radio" name="gender" id="female" value="0">
+                        <label class="form-check-label" for="female">Nữ</label>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input me-2" type="radio" name="gender" id="female" value="0">
-                      <label class="form-check-label" for="female">Nữ</label>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Số điện thoại</legend>
-                  <input type="text" class="form-control" value="0123 456 789">
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-12 col-lg-8">
-                <fieldset>
-                  <legend>Email</legend>
-                  <input type="email" class="form-control" value="nguyenvana@gmail.com">
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-12 col-lg-12">
-                <fieldset>
-                  <legend>Địa chỉ</legend>
-                  <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội">
-                </fieldset>
-              </div>
-              <div class="col-md-12 text-end mt-2">
-                <a href="javascript:void(0)" class="btn btn-md btn-secondary">
-                  <i class="fas fa-check text-success mr-2"></i>Cập nhật thông tin
-                </a>
-              </div>
-            </form>
-          </div>
-          <!-- Change password -->
-          <div class="change-password">
-            <div class="row">
-              <div class="col-12">
-                <h1 class="title fix-mb-title fix-mt-title">Đổi mật khẩu</h1>
-              </div>
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Số điện thoại</legend>
+                    <input type="text" class="form-control" value="0123 456 789">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-8">
+                  <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" class="form-control" value="nguyenvana@gmail.com">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-12">
+                  <fieldset>
+                    <legend>Địa chỉ</legend>
+                    <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội">
+                  </fieldset>
+                </div>
+                <div class="col-md-12 text-end mt-2">
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+                    <i class="fas fa-check text-success mr-2"></i>Cập nhật thông tin
+                  </a>
+                </div>
+              </form>
             </div>
-            <form class="row panel-form mx-0">
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Mật khẩu cũ</legend>
-                  <input type="password" class="form-control">
-                </fieldset>
+            <!-- Change password -->
+            <div class="change-password">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title fix-mt-title">Đổi mật khẩu</h1>
+                </div>
               </div>
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Mật khẩu mới</legend>
-                  <input type="password" class="form-control">
-                </fieldset>
-              </div>
-              <div class="form-group col-12 col-md-6 col-lg-4">
-                <fieldset>
-                  <legend>Xác nhận mật khẩu mới</legend>
-                  <input type="password" class="form-control">
-                </fieldset>
-              </div>
-              <div class="col-md-12 text-end mt-2">
-                <a href="javascript:void(0)" class="btn btn-md btn-secondary">
-                  <i class="fas fa-check text-success mr-2"></i>Xác nhận
-                </a>
-              </div>
-            </form>
+              <form class="row panel-form mx-0">
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Mật khẩu cũ</legend>
+                    <input type="password" class="form-control">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Mật khẩu mới</legend>
+                    <input type="password" class="form-control">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset>
+                    <legend>Xác nhận mật khẩu mới</legend>
+                    <input type="password" class="form-control">
+                  </fieldset>
+                </div>
+                <div class="col-md-12 text-end mt-2">
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+                    <i class="fas fa-check text-success mr-2"></i>Xác nhận
+                  </a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
