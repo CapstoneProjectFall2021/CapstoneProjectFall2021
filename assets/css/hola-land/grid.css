@@ -14,8 +14,8 @@
 
 .col-left {
   position: relative;
-  padding-left: 50px !important;
-  padding-right: 20px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .col-left:before {
@@ -34,7 +34,7 @@
 
 .col-right {
   position: relative;
-  padding-left: 40px !important;
+  padding-left: 30px !important;
 }
 
 .col-right:before {
@@ -42,7 +42,7 @@
   display: block;
   position: absolute;
   z-index: -1;
-  left: 0;
+  left: -10px;
   top: 0;
   bottom: 0;
   height: 100%;

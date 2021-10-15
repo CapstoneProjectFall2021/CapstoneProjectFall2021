@@ -20,7 +20,7 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: var(--font-weight-4);
   margin-bottom: 0;
 }
@@ -779,7 +779,7 @@
 /* For link a */
 
 .label-info {
-  padding: 18px 20px 12px;
+  padding: 16px 20px 10px;
   display: block;
   border-radius: var(--primary-border-radius);
   background-color: var(--primary-button-background);

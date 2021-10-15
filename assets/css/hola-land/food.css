@@ -11,8 +11,8 @@
 }
 
 .list-online-store .label-info .flex .icon img {
-  width: 145px;
-  height: 145px;
+  width: 140px;
+  height: 140px;
   transition: 0.4s;
 }
 
@@ -284,7 +284,7 @@
 
 .list-comment .comment.flex .comment-area .time p {
   margin-top: 3px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: 12px;
   color: var(--secondary-text);
 }
