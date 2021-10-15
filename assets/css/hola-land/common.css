@@ -33,7 +33,7 @@
 
 .sub-title-small {
   font-size: 18px;
-  margin: 0 20px 15px 20px;
+  margin: 0 20px 14px 20px;
   font-weight: var(--font-weight-4);
 }
 
@@ -684,18 +684,6 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 992px) {
-  .m-mb-30 {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .m-mb-20 {
-    margin-bottom: 15px;
-  }
-}
-
 
 /* Tags ==============================================================================================================*/
 
@@ -897,7 +885,7 @@
   background-color: var(--primary-background);
   border: 1px solid var(--primary-border-color);
   color: var(--primary-text);
-  padding: 15px 20px;
+  padding: 14px 20px;
   margin-bottom: 20px;
 }
 

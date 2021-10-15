@@ -103,7 +103,7 @@
 }
 
 .online-store .online-store-title h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 0;
   font-weight: var(--font-weight-4);
 }
@@ -220,7 +220,7 @@
 #foodDetailModal .modal-body .flex .icon img {
   border-radius: var(--primary-border-radius);
   margin-right: 20px;
-  width: 200px;
+  width: 220px;
 }
 
 #foodDetailModal .modal-body .flex .content-body h3 {
@@ -232,6 +232,7 @@
 #foodDetailModal .modal-body .flex .content-body p {
   font-size: 16px;
   color: var(--secondary-text);
+  margin-bottom: 0;
 }
 
 
