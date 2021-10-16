@@ -27,7 +27,7 @@
 
 .sub-title {
   font-size: 20px;
-  margin: 0 20px 15px 20px;
+  margin: 0 20px 14px 20px;
   font-weight: var(--font-weight-4);
 }
 
@@ -877,7 +877,7 @@
   position: relative;
   transition: 0.4s;
   padding: 18px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .panel-text {
@@ -886,7 +886,7 @@
   border: 1px solid var(--primary-border-color);
   color: var(--primary-text);
   padding: 14px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 575.98px) {
