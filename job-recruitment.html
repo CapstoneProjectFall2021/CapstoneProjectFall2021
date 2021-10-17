@@ -228,19 +228,19 @@
                   <fieldset class="bg-dark-ui">
                     <legend>Yêu cầu kinh nghiệm</legend>
                     <select class="form-control form-select" id="memberGender" name="memberGender">
-                    <option value="1" selected="selected">Không yêu cầu</option>
-                    <option value="2">Có yêu cầu</option>
-                  </select>
+                      <option value="1" selected="selected">Không yêu cầu</option>
+                      <option value="2">Có yêu cầu</option>
+                    </select>
                   </fieldset>
                 </div>
                 <div class="form-group col-12 col-md-6 col-lg-4">
                   <fieldset class="bg-dark-ui">
                     <legend>Yêu cầu giới tính</legend>
                     <select class="form-control form-select" id="memberGender" name="memberGender">
-                    <option value="-1" selected="selected">Không yêu cầu</option>
-                    <option value="1">Nam</option>
-                    <option value="0">Nữ</option>
-                  </select>
+                      <option value="-1" selected="selected">Không yêu cầu</option>
+                      <option value="1">Nam</option>
+                      <option value="0">Nữ</option>
+                    </select>
                   </fieldset>
                 </div>
                 <div class="form-group col-12 col-md-6 col-lg-4">
@@ -253,27 +253,38 @@
                   <fieldset class="bg-dark-ui">
                     <legend>Hình thức làm việc</legend>
                     <select class="form-control form-select" id="memberGender" name="memberGender">
-                    <option value="1" selected="selected">Toàn thời gian</option>
-                    <option value="2">Bán thời gian</option>
-                  </select>
+                      <option value="1" selected="selected">Toàn thời gian</option>
+                      <option value="2">Bán thời gian</option>
+                    </select>
                   </fieldset>
                 </div>
                 <div class="form-group col-12 col-md-6 col-lg-4">
                   <fieldset class="bg-dark-ui">
-                    <legend>Hình thức chi trả</legend>
+                    <legend>Hình thức thanh toán</legend>
                     <select class="form-control form-select" id="memberGender" name="memberGender">
-                    <option value="1" selected="selected">Trả theo giờ</option>
-                    <option value="2">Trả theo ngày</option>
-                    <option value="3">Trả theo tuần</option>
-                    <option value="4">Trả theo tháng</option>
-                  </select>
+                      <option value="1" selected="selected">Thanh toán theo ngày</option>
+                      <option value="2">Thanh toán 1 tuần / lần</option>
+                      <option value="3">Thanh toán 2 tuần / lần</option>
+                      <option value="4">Thanh toán theo tháng</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-4">
+                  <fieldset class="bg-dark-ui">
+                    <legend>Đơn vị tính lương</legend>
+                    <select class="form-control form-select" id="memberGender" name="memberGender">
+                      <option value="1" selected="selected">Tính theo giờ</option>
+                      <option value="2">Tính theo ngày</option>
+                      <option value="3">Tính theo tuần</option>
+                      <option value="4">Tính theo tháng</option>
+                    </select>
                   </fieldset>
                 </div>
                 <div class="form-group col-12 col-md-6 col-lg-4">
                   <fieldset>
                     <legend>Số tiền trả</legend>
-                    <input type="text" class="form-control">
-                    <!-- <label>VND</label> -->
+                    <input type="number" class="form-control pe-5">
+                    <label class="unit">VND</label>
                   </fieldset>
                 </div>
                 <div class="form-group col-12 col-md-6 col-lg-4">
@@ -282,7 +293,7 @@
                     <input type="number" class="form-control">
                   </fieldset>
                 </div>
-                <div class="form-group col-12 col-md-6 col-lg-8">
+                <div class="form-group col-12 col-md-6 col-lg-12">
                   <fieldset>
                     <legend>Địa điểm làm việc</legend>
                     <input type="text" class="form-control">

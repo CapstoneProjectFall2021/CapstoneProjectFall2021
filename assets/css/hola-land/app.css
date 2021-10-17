@@ -178,7 +178,7 @@ select:-webkit-autofill:focus {
 .text-field {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   max-width: 360px;
   width: 100%;
   margin: 5px 0;
@@ -191,6 +191,7 @@ select:-webkit-autofill:focus {
 .text-field .switch-theme {
   display: flex;
   align-items: center;
+  margin: 10px 0;
 }
 
 .text-field .switch-theme input {
@@ -357,6 +358,84 @@ select:-webkit-autofill:focus {
 
 .container.sign-up-mode .right-panel {
   pointer-events: all;
+}
+
+
+/**/
+
+#toast-info,
+#toast-error {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 16px;
+}
+
+#toast-info.show,
+#toast-error.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#toast-error.danger {
+  background-color: #dc3545;
+}
+
+#toast-info.success {
+  background-color: #198754;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 870px) {

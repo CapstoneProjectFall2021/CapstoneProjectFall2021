@@ -29,11 +29,18 @@
           </div>
           <input type="submit" value="Đăng nhập" class="btn solid" />
           <div class="text-field">
-            <div class="switch-theme">
-              <input type="checkbox" id="switch-sign-in">
-              <label>Chế độ tối</label>
-            </div>
             <div>
+              <div class="switch-theme">
+                <input type="checkbox" id="switch-sign-in">
+                <label>Chế độ tối</label>
+              </div>
+              <div class="switch-theme">
+                <input type="checkbox" name="remember-me" />
+                <label>Ghi nhớ tài khoản</label>
+              </div>
+            </div>
+            <div style="text-align: right">
+              <a th:href="@{/}"><i class="fas fa-home"></i>Trang chủ</a>
               <a href="#">Quên mật khẩu?</a>
             </div>
           </div>
