@@ -11,6 +11,15 @@
   justify-content: space-between;
 }
 
+.list-request .label-info .flex {
+  justify-content: start;
+}
+
+.list-request .label-info .flex .content-body .job-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* Job detail */
 
@@ -49,6 +58,18 @@
   align-items: center;
   justify-content: space-between;
   color: var(--secondary-text);
+}
+
+
+/* Preview modal*/
+
+.modal-preview {
+  max-width: 1000px;
+}
+
+.preview-bg {
+  background-color: var(--body-background);
+  padding: 20px 20px 4px 20px !important;
 }
 
 

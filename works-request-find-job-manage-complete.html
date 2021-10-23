@@ -176,37 +176,7 @@
                 </a>
               </li>
               <li>
-                <a href="jobs-apply.html">
-                  <i class="fas fa-tasks fa-fw"></i>Danh sách ứng tuyển
-                </a>
-              </li>
-              <li>
-                <a href="jobs-save.html">
-                  <i class="far fa-bookmark fa-fw"></i>Việc làm đã lưu
-                </a>
-              </li>
-              <li>
-                <a href="job-post.html">
-                  <i class="fas fa-pencil-alt fa-fw"></i>Viết bài tìm việc
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="far fa-file-alt fa-fw"></i>Bài viết đã đăng
-                </a>
-              </li>
-              <li>
-                <a href="job-recruitment.html">
-                  <i class="fas fa-pencil-alt fa-fw"></i>Viết bài tuyển dụng
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)" onclick="showToast()">
-                  <i class="fas fa-pencil-alt fa-fw"></i>Test Toast
-                </a>
-              </li>
-              <li>
-                <a href="index.html">
+                <a href="works.html">
                   <i class="fas fa-chevron-left fa-fw"></i>Quay lại
                 </a>
               </li>
@@ -215,18 +185,108 @@
         </div>
         <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
           <div class="col-right">
-            <!-- List job save -->
-            <div class="list-job">
+            <!-- List request type -->
+            <div class="list-request-type">
               <div class="row">
                 <div class="col-12">
-                  <h1 class="title fix-mb-title">Việc làm đã lưu</h1>
+                  <h1 class="title fix-mb-title">Loại bài viết</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="works-request-find-job-manage.html" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-dot-circle"></i>
+                      </div>
+                      <div class="number">
+                        <h4>3</h4>
+                      </div>
+                    </div>
+                    <div class="description club-type">
+                      Đang khả dụng
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="works-request-find-job-manage-pending.html" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-clock"></i>
+                      </div>
+                      <div class="number">
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="description club-type">
+                      Đang chờ duyệt
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="works-request-find-job-manage-complete.html" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-check-circle"></i>
+                      </div>
+                      <div class="number">
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="description club-type">
+                      Đã hoàn thành
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="works-request-find-job-manage-expired.html" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-times-circle"></i>
+                      </div>
+                      <div class="number">
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="description club-type">
+                      Hết hạn
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="works-request-find-job-manage-save-draft.html" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                      </div>
+                      <div class="number">
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="description club-type">
+                      Lưu nháp
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- List request -->
+            <div class="list-request">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mt-title fix-mb-title">Danh sách bài viết</h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
                   <div class="label-info m-mb-16">
+                    <div class="btn-action me-4">
+                      <a class="me-2" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRepostModal">
+                        <i class="fas fa-undo-alt m-0"></i>
+                      </a>
+                    </div>
                     <div class="btn-remove">
-                      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRemoveJobSaveModal">
+                      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRemoveFindJobModal">
                         <i class="far fa-trash-alt m-0"></i>
                       </a>
                     </div>
@@ -237,7 +297,7 @@
                       <div class="content-body">
                         <a href="#">Giáo Viên Tiếng Anh Online/Offline</a>
                         <div class="job-info">
-                          <p>Lương: 15k/h</p>
+                          <p>Lương mong muốn: 3.000.000/tháng</p>
                           <p>Thời hạn: 15/10/2021</p>
                         </div>
                       </div>
@@ -246,8 +306,13 @@
                 </div>
                 <div class="col-md-12">
                   <div class="label-info m-mb-16">
+                    <div class="btn-action me-4">
+                      <a class="me-2" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRepostModal">
+                        <i class="fas fa-undo-alt m-0"></i>
+                      </a>
+                    </div>
                     <div class="btn-remove">
-                      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRemoveJobSaveModal">
+                      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRemoveFindJobModal">
                         <i class="far fa-trash-alt m-0"></i>
                       </a>
                     </div>
@@ -258,29 +323,8 @@
                       <div class="content-body">
                         <a href="#">Giáo Viên Tiếng Anh Online/Offline</a>
                         <div class="job-info">
-                          <p>Lương: 15k/h</p>
-                          <p>Thời hạn: 15/10/2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="label-info m-mb-16">
-                    <div class="btn-remove">
-                      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#confirmRemoveJobSaveModal">
-                        <i class="far fa-trash-alt m-0"></i>
-                      </a>
-                    </div>
-                    <div class="flex">
-                      <div class="icon">
-                        <img class="media-object" src="assets/images/system/v.png" alt="">
-                      </div>
-                      <div class="content-body">
-                        <a href="#">Giáo Viên Tiếng Anh Online/Offline</a>
-                        <div class="job-info">
-                          <p>Lương: 15k/h</p>
-                          <p>Thời hạn: 15/10/2021</p>
+                          <p>Lương mong muốn: 25k/h</p>
+                          <p>Thời hạn: 15/11/2021</p>
                         </div>
                       </div>
                     </div>
@@ -295,15 +339,34 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="confirmRemoveJobSaveModal" tabindex="-1" aria-labelledby="confirmRemoveJobSaveModalLabel" aria-hidden="true">
+  <div class="modal fade" id="confirmRepostModal" tabindex="-1" aria-labelledby="confirmRepostModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="confirmRemoveJobSaveModalLabel">Thông báo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="confirmRepostModalLabel">Thông báo</h5>
         </div>
         <div class="modal-body">
-          Xác nhận xoá việc làm?
+          Xác nhận đăng lại bài tìm việc này?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success mr-2"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="confirmRemoveFindJobModal" tabindex="-1" aria-labelledby="confirmRemoveFindJobModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmRemoveFindJobModalLabel">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận xoá bài tìm việc này?
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
