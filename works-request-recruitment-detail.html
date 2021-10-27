@@ -205,13 +205,13 @@
                         <div class="apply-area">
                           <div class="apply-area-btn">
                             <div class="btn-apply">
-                              <a href="javascript:void(0)" class="btn btn-md btn-success" data-bs-toggle="modal" data-bs-target="#confirmApplyJobModal">
+                              <a href="javascript:void(0)" class="btn btn-md btn-success" data-bs-toggle="modal" data-bs-target="#confirmApplyRequestModal">
                               ỨNG TUYỂN NGAY
                             </a>
                             </div>
-                            <div class="btn-save-job">
-                              <a id="btn-save-job" href="javascript:void(0)" class="btn btn-md btn-secondary m-mt-16" onclick="save()">
-                                <i id="icon-save-job" class="far fa-bookmark fa-fw"></i><span id="label-save-job">LƯU VIỆC LÀM</span>
+                            <div class="btn-save-request">
+                              <a id="btn-save-request" href="javascript:void(0)" class="btn btn-md btn-secondary m-mt-16" onclick="save()">
+                                <i id="icon-save-request" class="far fa-bookmark fa-fw"></i><span id="label-save-request">LƯU VIỆC LÀM</span>
                               </a>
                             </div>
                           </div>
@@ -278,11 +278,11 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="confirmApplyJobModal" tabindex="-1" aria-labelledby="confirmApplyJobModalLabel" aria-hidden="true">
+  <div class="modal fade" id="confirmApplyRequestModal" tabindex="-1" aria-labelledby="confirmApplyRequestModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="confirmApplyJobModalLabel">Thông báo</h5>
+          <h5 class="modal-title" id="confirmApplyRequestModalLabel">Thông báo</h5>
         </div>
         <div class="modal-body">
           Xác nhận ứng tuyển việc làm?
@@ -325,10 +325,10 @@
     }
 
     function setStateBtnSaveJob() {
-      document.getElementById("label-save-job").innerHTML = "ĐÃ LƯU";
-      document.getElementById("icon-save-job").classList.remove('far');
-      document.getElementById("icon-save-job").classList.add('fas');
-      document.getElementById("btn-save-job").onclick = function(e) {
+      document.getElementById("label-save-request").innerHTML = "ĐÃ LƯU";
+      document.getElementById("icon-save-request").classList.remove('far');
+      document.getElementById("icon-save-request").classList.add('fas');
+      document.getElementById("btn-save-request").onclick = function(e) {
         e.defaultPrevented();
       }
     }
