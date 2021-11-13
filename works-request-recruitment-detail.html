@@ -300,39 +300,6 @@
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/hola-land/hola-land.js"></script>
   <script>
-    function save() {
-      // Tạo đổi tượng XMLHttpRequest
-      var request = new XMLHttpRequest();
-
-      // Khởi tạo đối tượng yêu cầu
-      request.open("GET", "https://anest-hl-backend.herokuapp.com/course/1", false);
-
-      // Định nghĩa một hàm được gọi cho readystatechange
-      request.onreadystatechange = function() {
-        // Kiểm tra xem yêu cầu đã hoàn thành và thành công chưa
-        if (this.readyState === 4 && this.status === 200) {
-          // Chèn phản hồi từ máy chủ vào một phần tử HTML
-          // document.getElementById("result").innerHTML = this.responseText;
-          setStateBtnSaveJob();
-          showToast('test-toast');
-        } else {
-          alert("ERROR");
-        }
-      };
-
-      // Gửi yêu cầu đến máy chủ
-      request.send();
-    }
-
-    function setStateBtnSaveJob() {
-      document.getElementById("label-save-request").innerHTML = "ĐÃ LƯU";
-      document.getElementById("icon-save-request").classList.remove('far');
-      document.getElementById("icon-save-request").classList.add('fas');
-      document.getElementById("btn-save-request").onclick = function(e) {
-        e.defaultPrevented();
-      }
-    }
-
     function showToast(id) {
       const toast = new bootstrap.Toast(document.getElementById(id));
       toast.show();
