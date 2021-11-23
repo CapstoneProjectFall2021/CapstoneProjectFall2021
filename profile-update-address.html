@@ -208,13 +208,126 @@
                   <h1 class="title fix-mb-title">Chỉnh sửa địa chỉ</h1>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  Coming soon
+              <form class="row panel-form mx-0">
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Họ và tên</legend>
+                    <input type="text" class="form-control" value="Nguyễn Văn A">
+                  </fieldset>
                 </div>
-              </div>
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Số điện thoại</legend>
+                    <input type="text" class="form-control" value="0123 456 789">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-6 mb-0">
+                  <fieldset>
+                    <legend>Địa chỉ</legend>
+                    <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội">
+                  </fieldset>
+                </div>
+                <div class="col-md-12 text-end mt-2 btn-group">
+                  <div class="m-mb-12">
+                    <span class="btn default"><i class="fas fa-house-user"></i>Địa chỉ mặc định</span>
+                  </div>
+                  <div class="m-mb-12">
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+                      <i class="fas fa-check text-success"></i>Chỉnh sửa
+                    </a>
+                  </div>
+                </div>
+              </form>
+              <form class="row panel-form mx-0">
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Họ và tên</legend>
+                    <input type="text" class="form-control" value="Nguyễn Văn A">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Số điện thoại</legend>
+                    <input type="text" class="form-control" value="0123 456 789">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-6 mb-0">
+                  <fieldset>
+                    <legend>Địa chỉ</legend>
+                    <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội">
+                  </fieldset>
+                </div>
+                <div class="col-md-12 text-end mt-2 btn-group">
+                  <div class="m-mb-12"></div>
+                  <div class="m-mb-12">
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+                      <i class="fas fa-ban text-danger"></i>Xoá
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary me-2">
+                      <i class="fas fa-map-marker-alt text-warning"></i>Thiết lập mặc định
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+                      <i class="fas fa-check text-success"></i>Chỉnh sửa
+                    </a>
+                  </div>
+                </div>
+              </form>
+              <form class="row panel-form mx-0">
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Họ và tên</legend>
+                    <input type="text" class="form-control" value="Nguyễn Văn A">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                  <fieldset>
+                    <legend>Số điện thoại</legend>
+                    <input type="text" class="form-control" value="0123 456 789">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-6 mb-0">
+                  <fieldset>
+                    <legend>Địa chỉ</legend>
+                    <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội">
+                  </fieldset>
+                </div>
+                <div class="col-md-12 text-end mt-2 btn-group">
+                  <div class="m-mb-12"></div>
+                  <div class="m-mb-12">
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+                      <i class="fas fa-ban text-danger"></i>Xoá
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary me-2">
+                      <i class="fas fa-map-marker-alt text-warning"></i>Thiết lập mặc định
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+                      <i class="fas fa-check text-success"></i>Chỉnh sửa
+                    </a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmDeleteModalLabel">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận xoá địa chỉ này?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
       </div>
     </div>

@@ -227,27 +227,7 @@
             </div>
             <ul class="nav navbar-nav sub-menu">
               <li>
-                <a href="#">
-                  <i class="fas fa-info fa-fw"></i>Thông tin shop
-                </a>
-              </li>
-              <li>
-                <a href="food-manage-store-food.html">
-                  <i class="fas fa-tasks fa-fw"></i>Quản lý thẻ - đồ ăn
-                </a>
-              </li>
-              <li>
-                <a href="food-manage-store-order.html">
-                  <i class="fas fa-list-ul fa-fw"></i>Quản lý đơn hàng
-                </a>
-              </li>
-              <li>
-                <a href="food-manage-store-statistics.html">
-                  <i class="fas fa-chart-line fa-fw"></i>Dữ liệu - Thống kê
-                </a>
-              </li>
-              <li>
-                <a href="food.html">
+                <a href="food-manage-store.html">
                   <i class="fas fa-chevron-left fa-fw"></i>Quay lại
                 </a>
               </li>
@@ -256,116 +236,230 @@
         </div>
         <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
           <div class="col-right">
-            <!-- Dashboard -->
-            <div class="dashboard">
+            <!-- Tags -->
+            <div class="tags">
               <div class="row">
                 <div class="col-12">
-                  <h1 class="title fix-mb-title">Dashboard</h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                  <a href="" class="label-info m-mb-16">
-                    <div class="flex">
-                      <div class="icon">
-                        <i class="far fa-check-square"></i>
-                      </div>
-                      <div class="number">
-                        <h4>20</h4>
-                      </div>
-                    </div>
-                    <div class="description">
-                      Tổng số đơn hàng
-                    </div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                  <a href="" class="label-info m-mb-16">
-                    <div class="flex">
-                      <div class="icon">
-                        <i class="fas fa-list-ul"></i>
-                      </div>
-                      <div class="number">
-                        <h4>20</h4>
-                      </div>
-                    </div>
-                    <div class="description">
-                      Tổng số sản phẩm
-                    </div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                  <a href="#" class="label-info m-mb-16">
-                    <div class="flex">
-                      <div class="icon">
-                        <i class="fas fa-tasks"></i>
-                      </div>
-                      <div class="number">
-                        <h4>3</h4>
-                      </div>
-                    </div>
-                    <div class="description">
-                      Sản phẩm đã bán
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Info -->
-            <div class="info">
-              <div class="row">
-                <div class="col-12">
-                  <h1 class="title fix-mb-title fix-mt-title">Thông tin chung</h1>
+                  <h1 class="title fix-mb-title">Danh sách thẻ</h1>
                 </div>
               </div>
               <form class="row panel-form mx-0 m-mb-16">
-                <div class="form-group col-12 col-md-6 col-lg-12">
-                  <fieldset>
-                    <legend>Tên shop</legend>
-                    <input type="text" class="form-control" value="Quán cơm Phương Nguyễn" readonly>
-                  </fieldset>
+                <div class="list-update-tag m-mt-8">
+                  <div class="tags">
+                    <span class="tag">Cơm</span>
+                    <span class="tag">Bánh mỳ</span>
+                    <span class="tag">Đồ ăn vặt</span>
+                    <span class="tag">Đồ ăn nhanh</span>
+                  </div>
                 </div>
-                <div class="form-group col-12 col-md-6 col-lg-12">
-                  <fieldset>
-                    <legend>Mô tả</legend>
-                    <input type="text" class="form-control" value="Chuyên cơm - bún - phở và đồ ăn vặt." readonly>
-                  </fieldset>
-                </div>
-                <div class="col-md-12 text-end mt-2">
-                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12" data-bs-toggle="modal" data-bs-target="#updateShopInfoModal">
+                <div class="col-md-12 text-end">
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12" data-bs-toggle="modal" data-bs-target="#updateTagModal">
                     <i class="fas fa-pencil-alt text-success"></i>Chỉnh sửa
                   </a>
                 </div>
               </form>
             </div>
+
+            <!-- List food -->
+            <div class="list-food">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title fix-mt-title">Danh sách đồ ăn</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <a href="javascript:void(0)" class="btn btn-lg btn-primary m-mb-12" data-bs-toggle="modal" data-bs-target="#addNewFoodModal">
+                    <i class="fas fa-plus text-success"></i>Thêm sản phẩm mới
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <a href="javascript:void(0)" class="btn-more">
+                          <i class="fas fa-pencil-alt text-success"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-more me-0" data-bs-toggle="modal" data-bs-target="#confirmDeleteFoodModal">
+                          <i class="far fa-trash-alt text-danger"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-12">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <a href="javascript:void(0)" class="btn-more">
+                          <i class="fas fa-pencil-alt text-success"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-more me-0" data-bs-toggle="modal" data-bs-target="#confirmDeleteFoodModal">
+                          <i class="far fa-trash-alt text-danger"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal update shop info -->
-  <div class="modal fade" id="updateShopInfoModal" tabindex="-1" aria-labelledby="updateShopInfoModalLabel" aria-hidden="true">
+  <!-- Modal Confirm Delete Food -->
+  <div class="modal fade" id="confirmDeleteFoodModal" tabindex="-1" aria-labelledby="confirmDeleteFoodModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="updateShopInfoModalLabel">Thay đổi thông tin</h5>
+          <h5 class="modal-title" id="confirmDeleteFoodModalLabel">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận xoá sản phẩm này?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Update Tag -->
+  <div class="modal fade" id="updateTagModal" tabindex="-1" aria-labelledby="updateTagModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateTagModalLabel">Chỉnh sửa thẻ</h5>
         </div>
         <div class="modal-body">
           <form class="row">
-            <div class="form-group col-md-12">
-              <fieldset>
-                <legend>Tên shop</legend>
-                <input type="text" class="form-control">
-              </fieldset>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked>
+                <label class="form-check-label" for="flexCheckDefault1">
+                    Cơm
+                  </label>
+              </div>
             </div>
-            <div class="form-group col-md-12 mb-0">
-              <fieldset>
-                <legend>Mô tả ngắn</legend>
-                <textarea class="form-control" rows="3"></textarea>
-              </fieldset>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                <label class="form-check-label" for="flexCheckChecked2">
+                    Bánh mỳ
+                  </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                <label class="form-check-label" for="flexCheckChecked3">
+                    Đồ ăn vặt
+                  </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                <label class="form-check-label" for="flexCheckChecked4">
+                    Đồ ăn nhanh
+                  </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                <label class="form-check-label" for="flexCheckChecked5">
+                    Phở
+                  </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                <label class="form-check-label" for="flexCheckChecked6">
+                    Cháo
+                  </label>
+              </div>
             </div>
           </form>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Add New Food -->
+  <div class="modal fade" id="addNewFoodModal" tabindex="-1" aria-labelledby="addNewFoodModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addNewFoodModalLabel">Thêm sản phẩm mới</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6 m-mb-20">
+              <img id="blah" class="preview-img" width="100%" height="100%" src="assets/images/system/no-image.png" />
+            </div>
+            <div class="col-12 col-md-6">
+              <form class="row">
+                <div class="form-group col-md-12">
+                  <input type="file" class="form-control" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                </div>
+                <div class="form-group col-md-12">
+                  <fieldset>
+                    <legend>Tên sản phẩm</legend>
+                    <input type="text" class="form-control">
+                  </fieldset>
+                </div>
+                <div class="form-group col-md-12 mb-0">
+                  <fieldset>
+                    <legend>Giá sản phẩm</legend>
+                    <input type="number" class="form-control pe-5">
+                    <label class="unit">VND</label>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
