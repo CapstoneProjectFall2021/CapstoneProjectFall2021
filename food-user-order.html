@@ -251,6 +251,7 @@
                     <table id="order-table-no-filter" table class="table m-0" cellspacing="0" width="100%">
                       <thead>
                         <tr>
+                          <th class="text-center">#</th>
                           <th>Mã GD</th>
                           <th class="text-center">Thời gian</th>
                           <th class="text-end">Tổng tiền</th>
@@ -260,6 +261,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <td class="text-center">1</td>
                           <td>
                             <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#listOrderDetailModal">#0000022</a>
                           </td>
@@ -273,6 +275,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">2</td>
                           <td><a href="">#0000024</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -349,6 +352,7 @@
                     <table id="order-history-table" table class="table" cellspacing="0" width="100%">
                       <thead>
                         <tr>
+                          <th class="text-center">#</th>
                           <th>Mã GD<i class="fas fa-sort fa-size"></i></th>
                           <th class="text-center">Thời gian<i class="fas fa-sort fa-size"></i></th>
                           <th class="text-end">Tổng tiền<i class="fas fa-sort fa-size"></i></th>
@@ -358,6 +362,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <td class="text-center">1</td>
                           <td><a href="">#000001</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">50.000<sup>đ</sup></td>
@@ -369,6 +374,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">2</td>
                           <td><a href="">#000002</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -380,6 +386,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">3</td>
                           <td><a href="">#000003</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">50.000<sup>đ</sup></td>
@@ -391,6 +398,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">4</td>
                           <td><a href="">#000004</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -402,6 +410,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">5</td>
                           <td><a href="">#000005</a></td>
                           <td class="text-center">25-06-2020 18:08:33</td>
                           <td class="text-end">120.000<sup>đ</sup></td>
@@ -409,6 +418,7 @@
                           <td class="text-end"></td>
                         </tr>
                         <tr>
+                          <td class="text-center">6</td>
                           <td><a href="">#000006</a></td>
                           <td class="text-center">24-06-2020 18:08:33</td>
                           <td class="text-end">50.000<sup>đ</sup></td>
@@ -420,6 +430,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">7</td>
                           <td><a href="">#000007</a></td>
                           <td class="text-center">25-06-2020 18:05:33</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -431,6 +442,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">8</td>
                           <td><a href="">#000008</a></td>
                           <td class="text-center">25-06-2020 18:08:37</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -442,6 +454,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">9</td>
                           <td><a href="">#000009</a></td>
                           <td class="text-center">25-06-2020 18:08:38</td>
                           <td class="text-end">10.000<sup>đ</sup></td>
@@ -449,6 +462,7 @@
                           <td class="text-end"></td>
                         </tr>
                         <tr>
+                          <td class="text-center">10</td>
                           <td><a href="">#000010</a></td>
                           <td class="text-center">25-06-2020 18:08:39</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -460,6 +474,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td class="text-center">11</td>
                           <td><a href="">#000011</a></td>
                           <td class="text-center">25-06-2020 18:08:39</td>
                           <td class="text-end">20.000<sup>đ</sup></td>
@@ -487,57 +502,40 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="listOrderDetailModalLabel">Danh sách ứng tuyển</h5>
+          <h5 class="modal-title" id="listOrderDetailModalLabel">Chi tiết đơn hàng</h5>
         </div>
         <div class="modal-body">
-          <table class="table">
+          <table class="table mb-0">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Họ và tên</th>
-                <th scope="col">Ngày sinh</th>
-                <th scope="col">Số điện thoại</th>
-                <th scope="col">Giới tính</th>
-                <th scope="col" class="text-end">Hành động</th>
+                <th scope="col">Tên đồ ăn</th>
+                <th scope="col" class="text-center">Số lượng</th>
+                <th scope="col" class="text-center">Đơn giá</th>
+                <th scope="col" class="text-end">Tổng tiền</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Phạm Ngọc Thanh</td>
-                <td>11/11/1994</td>
-                <td>0983 875 125</td>
-                <td>Nam</td>
-                <td class="text-end">
-                  <a href="javascript:void(0)" class="me-2">
-                    <i class="fas fa-check text-success"></i>
-                  </a>
-                  <a href="javascript:void(0)">
-                    <i class="fas fa-ban text-danger"></i>
-                  </a>
-                </td>
+                <td><a href="">Cơm hến xào</a></td>
+                <td class="text-center">1</td>
+                <td class="text-center">35.000<sup>đ</sup></td>
+                <td class="text-end">35.000<sup>đ</sup></td>
               </tr>
               <tr>
                 <td>2</td>
-                <td>Trần Minh Ngọc</td>
-                <td>11/11/1999</td>
-                <td>0983 875 999</td>
-                <td>Nữ</td>
-                <td class="text-end">
-                  <a href="javascript:void(0)" class="me-2">
-                    <i class="fas fa-check text-success"></i>
-                  </a>
-                  <a href="javascript:void(0)">
-                    <i class="fas fa-ban text-danger"></i>
-                  </a>
-                </td>
+                <td><a href="">Trà ô long</a></td>
+                <td class="text-center">2</td>
+                <td class="text-center">25.000<sup>đ</sup></td>
+                <td class="text-end">50.000<sup>đ</sup></td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
-            <i class="fas fa-check text-success"></i>Xác nhận
+            <i class="fas fa-times text-danger"></i>Huỷ đơn hàng
           </a>
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
