@@ -436,13 +436,16 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-12 col-md-6 m-mb-20">
+            <div class="col-12 col-md-6 m-mb-20 m-mt-10">
               <img id="blah" class="preview-img" width="100%" height="100%" src="assets/images/system/no-image.png" />
             </div>
             <div class="col-12 col-md-6">
               <form class="row">
                 <div class="form-group col-md-12">
-                  <input type="file" class="form-control" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                  <fieldset>
+                    <legend>Lựa chọn hình ảnh</legend>
+                    <input type="file" class="form-control custom-file-input" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                  </fieldset>
                 </div>
                 <div class="form-group col-md-12">
                   <fieldset>

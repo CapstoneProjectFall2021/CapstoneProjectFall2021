@@ -319,22 +319,29 @@
                 </div>
               </div>
               <form class="row panel-form mx-0 m-mb-16">
-                <div class="form-group col-12 col-md-6 col-lg-12">
-                  <fieldset>
-                    <legend>Tên shop</legend>
-                    <input type="text" class="form-control" value="Quán cơm Phương Nguyễn" readonly>
-                  </fieldset>
+                <div class="col-12 col-md-12 col-lg-3 m-mb-12 m-mt-8">
+                  <img class="preview-img" width="100%" src="assets/images/system/no-image.png" />
                 </div>
-                <div class="form-group col-12 col-md-6 col-lg-12">
-                  <fieldset>
-                    <legend>Mô tả</legend>
-                    <input type="text" class="form-control" value="Chuyên cơm - bún - phở và đồ ăn vặt." readonly>
-                  </fieldset>
-                </div>
-                <div class="col-md-12 text-end mt-2">
-                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12" data-bs-toggle="modal" data-bs-target="#updateShopInfoModal">
-                    <i class="fas fa-pencil-alt text-success"></i>Chỉnh sửa
-                  </a>
+                <div class="col-12 col-md-12 col-lg-9">
+                  <div class="row">
+                    <div class="form-group col-12 col-md-12 col-lg-12">
+                      <fieldset>
+                        <legend>Tên shop</legend>
+                        <input type="text" class="form-control" value="Quán cơm Phương Nguyễn" readonly>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-12 col-lg-12">
+                      <fieldset>
+                        <legend>Mô tả</legend>
+                        <input type="text" class="form-control" value="Chuyên cơm - bún - phở và đồ ăn vặt." readonly>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12 text-end mt-2">
+                      <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12" data-bs-toggle="modal" data-bs-target="#updateShopInfoModal">
+                        <i class="fas fa-pencil-alt text-success"></i>Chỉnh sửa
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -346,24 +353,37 @@
 
   <!-- Modal update shop info -->
   <div class="modal fade" id="updateShopInfoModal" tabindex="-1" aria-labelledby="updateShopInfoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="updateShopInfoModalLabel">Thay đổi thông tin</h5>
         </div>
         <div class="modal-body">
           <form class="row">
-            <div class="form-group col-md-12">
-              <fieldset>
-                <legend>Tên shop</legend>
-                <input type="text" class="form-control">
-              </fieldset>
+            <div class="col-12 col-md-12 col-lg-5 m-mb-20 m-mt-10">
+              <img id="blah" class="preview-img" width="100%" src="assets/images/system/no-image.png" />
             </div>
-            <div class="form-group col-md-12 mb-0">
-              <fieldset>
-                <legend>Mô tả ngắn</legend>
-                <textarea class="form-control" rows="3"></textarea>
-              </fieldset>
+            <div class="col-12 col-md-12 col-lg-7">
+              <div class="row">
+                <div class="form-group col-12 col-md-12 col-lg-12">
+                  <fieldset>
+                    <legend>Lựa chọn hình ảnh</legend>
+                    <input type="file" class="form-control custom-file-input" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-12">
+                  <fieldset>
+                    <legend>Tên shop</legend>
+                    <input type="text" class="form-control" value="Quán cơm Phương Nguyễn" readonly>
+                  </fieldset>
+                </div>
+                <div class="form-group col-12 col-md-12 col-lg-12 mb-0">
+                  <fieldset>
+                    <legend>Mô tả</legend>
+                    <textarea class="form-control" rows="2"></textarea>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </form>
         </div>
