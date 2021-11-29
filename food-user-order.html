@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Land - Food detail</title>
+  <title>Hola Land - Đơn hàng</title>
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="assets/css/all.css">
   <!-- Bootstrap CSS -->
@@ -248,6 +248,12 @@
               <div class="panel pt-2">
                 <div class="row data-tables">
                   <div class="col-lg-12">
+                    <!-- <div class="flex-sb">
+                      <p class="m-mt-8 m-0">Danh sách đơn hàng hiện tại trống.</p>
+                      <div>
+                        <a href="food.html" class="m-mt-8 btn btn-md btn-secondary">Đặt hàng ngay</a>
+                      </div>
+                    </div> -->
                     <table id="order-table-no-filter" table class="table m-0" cellspacing="0" width="100%">
                       <thead>
                         <tr>
@@ -308,7 +314,22 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-list-ul"></i>
+                      </div>
+                      <div class="number">
+                        <h4>0</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Tất cả
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                   <a href="" class="label-info m-mb-16">
                     <div class="flex">
                       <div class="icon">
@@ -323,7 +344,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                   <a href="" class="label-info m-mb-16">
                     <div class="flex">
                       <div class="icon">
@@ -338,7 +359,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                   <a href="" class="label-info m-mb-16">
                     <div class="flex">
                       <div class="icon">
@@ -380,7 +401,7 @@
                           <td class="text-secondary text-end">Đã từ chối</td>
                           <td class="text-end">
                             <a href="javascript:void(0)" class="text-info" data-bs-toggle="modal" data-bs-target="#reasonRejectionOrderModal">
-                              <i class="far fa-comment-dots" data-bs-placement="top" data-bs-toggle="tooltip" title="Cửa hàng hết cơm"></i>
+                              <i class="far fa-comment-dots" data-bs-placement="top" data-bs-toggle="tooltip" title="Lý do từ chối"></i>
                             </a>
                           </td>
                         </tr>
@@ -538,7 +559,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  <!-- Modal list order detail -->
   <div class="modal fade" id="listOrderDetailModal" tabindex="-1" aria-labelledby="listOrderDetailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -584,7 +605,7 @@
     </div>
   </div>
 
-  <!-- Modal Confirm Cancel Order -->
+  <!-- Modal confirm cancel Order -->
   <div class="modal fade" id="confirmCancelOrderModal" tabindex="-1" aria-labelledby="confirmCancelOrderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -604,7 +625,7 @@
     </div>
   </div>
 
-  <!-- Modal Reason Rejection Order -->
+  <!-- Modal season reject Order -->
   <div class="modal fade" id="reasonRejectionOrderModal" tabindex="-1" aria-labelledby="reasonRejectionOrderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -621,12 +642,12 @@
     </div>
   </div>
 
-  <!-- Modal Repost Order -->
+  <!-- Modal repost Order -->
   <div class="modal fade" id="repostOrderModal" tabindex="-1" aria-labelledby="repostOrderModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="repostOrderModalLabel">Thông báo</h5>
+          <h5 class="modal-title" id="repostOrderModalLabel">Báo cáo đơn hàng</h5>
         </div>
         <div class="modal-body">
           <form class="row">
