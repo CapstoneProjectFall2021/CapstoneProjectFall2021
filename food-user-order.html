@@ -415,8 +415,11 @@
                           <td class="text-end">20.000<sup>đ</sup></td>
                           <td class="color-success text-end">Hoàn thành</td>
                           <td class="text-end">
-                            <a href="javascript:void(0)" class="text-warning" data-bs-toggle="modal" data-bs-target="#repostOrderModal">
-                              <i class="bi bi-exclamation-circle" data-bs-placement="top" data-bs-toggle="tooltip" title="Báo cáo"></i>
+                            <a href="javascript:void(0)" class="text-info me-2" data-bs-toggle="modal" data-bs-target="#reportOrderContentModal">
+                              <i class="far fa-comment-dots" data-bs-placement="top" data-bs-toggle="tooltip" title="Lý do từ chối"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteReportOrderModal">
+                              <i class="far fa-trash-alt" data-bs-placement="top" data-bs-toggle="tooltip" title="Xoá báo cáo"></i>
                             </a>
                           </td>
                         </tr>
@@ -663,6 +666,43 @@
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
             <i class="fas fa-check text-success"></i>Xác nhận
           </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal confirm delete report -->
+  <div class="modal fade" id="confirmDeleteReportOrderModal" tabindex="-1" aria-labelledby="confirmDeleteReportOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmDeleteReportOrderModalLabel">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận xoá báo cáo cho đơn hàng này?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal report order content -->
+  <div class="modal fade" id="reportOrderContentModal" tabindex="-1" aria-labelledby="reportOrderContentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reportOrderContentModalLabel">Nội dung báo cáo</h5>
+        </div>
+        <div class="modal-body">
+          Canh có ruồi.
+        </div>
+        <div class="modal-footer">
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
       </div>

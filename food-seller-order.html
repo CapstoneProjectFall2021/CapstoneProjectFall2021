@@ -274,7 +274,10 @@
                           <td class="text-info text-end">Chờ xác nhận</td>
                           <td class="text-end">
                             <a href="javascript:void(0)" class="text-info" data-bs-toggle="modal" data-bs-target="#noteOrderModal">
-                              <i class="far fa-comment-dots me-2" data-bs-placement="top" data-bs-toggle="tooltip" title="Ghi chú"></i>
+                              <i class="far fa-comment-dots me-3" data-bs-placement="top" data-bs-toggle="tooltip" title="Ghi chú"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="text-success">
+                              <i class="fas fa-check me-3" data-bs-placement="top" data-bs-toggle="tooltip" title="Xác nhận"></i>
                             </a>
                             <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#rejectOrderModal">
                               <i class="fas fa-times fa-lg" data-bs-placement="top" data-bs-toggle="tooltip" title="Từ chối đơn hàng"></i>
@@ -294,7 +297,10 @@
                           <td class="text-warning text-end">Đã xác nhận</td>
                           <td class="text-end">
                             <a href="javascript:void(0)" class="text-info" data-bs-toggle="modal" data-bs-target="#noteOrderModal">
-                              <i class="far fa-comment-dots me-2" data-bs-placement="top" data-bs-toggle="tooltip" title="Ghi chú"></i>
+                              <i class="far fa-comment-dots me-3" data-bs-placement="top" data-bs-toggle="tooltip" title="Ghi chú"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="text-success" data-bs-toggle="modal" data-bs-target="#confirmOrderModal">
+                              <i class="fas fa-check me-3" data-bs-placement="top" data-bs-toggle="tooltip" title="Xác nhận hoàn thành"></i>
                             </a>
                             <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#rejectOrderModal">
                               <i class="fas fa-times fa-lg" data-bs-placement="top" data-bs-toggle="tooltip" title="Từ chối đơn hàng"></i>
@@ -326,7 +332,7 @@
                       </div>
                     </div>
                     <div class="description">
-                      Tất cả
+                      Tất cả đơn hàng
                     </div>
                   </a>
                 </div>
@@ -579,6 +585,26 @@
           Ship nhanh giúp em trước 6h.
         </div>
         <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal confirm complete Order -->
+  <div class="modal fade" id="confirmOrderModal" tabindex="-1" aria-labelledby="confirmOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmOrderModalLabel">Ghi chú</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận hoàn thành đơn hàng?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
       </div>
