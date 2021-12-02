@@ -506,9 +506,38 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="listOrderDetailModalLabel">Chi tiết đơn hàng</h5>
+          <h5 class="modal-title" id="listOrderDetailModalLabel">Thông tin giao hàng</h5>
         </div>
         <div class="modal-body">
+          <div class="user-info">
+            <form class="row panel-form mx-0 p-0">
+              <div class="form-group col-12 col-md-6 col-lg-6 ps-0">
+                <fieldset>
+                  <legend>Họ và tên</legend>
+                  <input type="text" class="form-control" value="Nguyễn Văn A" readonly>
+                </fieldset>
+              </div>
+              <div class="form-group col-12 col-md-6 col-lg-6 pe-0">
+                <fieldset>
+                  <legend>Số điện thoại</legend>
+                  <input type="text" class="form-control" value="0123 456 789" readonly>
+                </fieldset>
+              </div>
+              <div class="form-group col-12 col-md-12 col-lg-12 px-0">
+                <fieldset>
+                  <legend>Địa chỉ</legend>
+                  <input type="text" class="form-control" value="Thôn 8, Thạch Hoà, Thạch Thất, Hà Nội" readonly>
+                </fieldset>
+              </div>
+              <div class="form-group col-12 col-md-12 col-lg-12 mb-0 px-0">
+                <fieldset>
+                  <legend>Ghi chú</legend>
+                  <input type="text" class="form-control" value="Ship nhanh giúp em trước 6h." readonly>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+          <h5 class="modal-sub-title">Chi tiết đơn hàng</h5>
           <table class="table mb-0">
             <thead>
               <tr>
@@ -536,9 +565,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="note mt-3">
-            Ghi chú: Ship nhanh giúp em trước 6h.
-          </div>
         </div>
         <div class="modal-footer">
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
