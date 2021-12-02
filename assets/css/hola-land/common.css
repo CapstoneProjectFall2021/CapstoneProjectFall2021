@@ -64,6 +64,10 @@
   transition: 0.1s;
 }
 
+.navbar-sm {
+  padding: 10px !important;
+}
+
 .navbar a {
   color: var(--primary-text);
 }

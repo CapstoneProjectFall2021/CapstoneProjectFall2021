@@ -50,7 +50,7 @@ const toastList = toastElList.map(function(toastEl) {
 
 window.onscroll = function() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").className = "navbar navbar-expand-lg fixed-top dark";
+    document.getElementById("navbar").className = "navbar navbar-sm navbar-expand-lg fixed-top dark";
   } else {
     document.getElementById("navbar").className = "navbar navbar-expand-lg fixed-top";
   }
