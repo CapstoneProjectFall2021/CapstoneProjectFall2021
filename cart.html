@@ -201,80 +201,83 @@
                     <!-- <div class="flex-sb">
                       <p class="m-mt-8 m-0">Danh sách giỏ hàng hiện tại trống.</p>
                       <div>
-                        <a href="food.html" class="m-mt-8 btn btn-md btn-secondary">Đặt hàng ngay</a>
+                        <a href="food.html" class="m-mt-8 btn btn-md btn-secondary">
+                          <i class="fas fa-plus text-success"></i>Đặt hàng ngay
+                        </a>
                       </div>
                     </div> -->
-                    <table id="cart-table" table class="table" cellspacing="0" width="100%">
-                      <thead>
-                        <tr>
-                          <th class="text-center">#</th>
-                          <th>Hình ảnh</th>
-                          <th>Tên sản phẩm</th>
-                          <th class="text-center">Giá</th>
-                          <th class="text-center">Số lượng</th>
-                          <th class="text-end">Tổng tiền</th>
-                          <th class="text-end">Thêm</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-center">1</td>
-                          <td>
-                            <div class="icon-circle">
-                              <img class="media-object" src="assets/images/food/ride.jpg" alt="">
-                            </div>
-                          </td>
-                          <td>Cơm hến xào</td>
-                          <td class="text-center">50.000<sup>đ</sup></td>
-                          <td class="text-center">
-                            <a href="javascript:void(0)" class="btn-cart">
-                              <i class="fas fa-minus text-info"></i>
-                            </a>
-                            2
-                            <a href="javascript:void(0)" class="btn-cart">
-                              <i class="fas fa-plus text-info"></i>
-                            </a>
-                          </td>
-                          <td class="text-end">100.000<sup>đ</sup></td>
-                          <td class="text-end">
-                            <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteItemInCartModal">
-                              <i class="far fa-trash-alt" data-bs-placement="top" data-bs-toggle="tooltip" title="Xoá đồ ăn"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">2</td>
-                          <td>
-                            <div class="icon-circle">
-                              <img class="media-object" src="assets/images/food/ride.jpg" alt="">
-                            </div>
-                          </td>
-                          <td>Cơm hến xào</td>
-                          <td class="text-center">50.000<sup>đ</sup></td>
-                          <td class="text-center">
-                            <a href="javascript:void(0)" class="btn-cart">
-                              <i class="fas fa-minus text-info"></i>
-                            </a>
-                            1
-                            <a href="javascript:void(0)" class="btn-cart">
-                              <i class="fas fa-plus text-info"></i>
-                            </a>
-                          </td>
-                          <td class="text-end">50.000<sup>đ</sup></td>
-                          <td class="text-end">
-                            <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteItemInCartModal">
-                              <i class="far fa-trash-alt" data-bs-placement="top" data-bs-toggle="tooltip" title="Xoá đồ ăn"></i>
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="btn-group">
-                      <div></div>
-                      <div>
-                        <a href="javascript:void(0)" class="btn btn-md btn-secondary" data-bs-toggle="modal" data-bs-target="#confirmDeleteCartModal">
-                          <i class="far fa-trash-alt color-danger"></i>Xoá tất cả
-                        </a>
+                    <div>
+                      <table id="cart-table" table class="table" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="text-center">#</th>
+                            <th>Tên sản phẩm</th>
+                            <th class="text-center">Giá</th>
+                            <th class="text-center">Số lượng</th>
+                            <th class="text-end">Tổng tiền</th>
+                            <th class="text-end">Thêm</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">1</td>
+                            <td>
+                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                Cơm hến Xào
+                              </a>
+                            </td>
+                            <td class="text-center">50.000<sup>đ</sup></td>
+                            <td class="text-center">
+                              <a href="javascript:void(0)" class="btn-cart">
+                                <i class="fas fa-minus text-info"></i>
+                              </a>
+                              2
+                              <a href="javascript:void(0)" class="btn-cart">
+                                <i class="fas fa-plus text-info"></i>
+                              </a>
+                            </td>
+                            <td class="text-end">100.000<sup>đ</sup></td>
+                            <td class="text-end">
+                              <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteItemInCartModal">
+                                <i class="far fa-trash-alt" data-bs-placement="top" data-bs-toggle="tooltip" title="Xoá đồ ăn"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2</td>
+                            <td>
+                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                Cơm hến Xào 2
+                              </a>
+                            </td>
+                            <td class="text-center">50.000<sup>đ</sup></td>
+                            <td class="text-center">
+                              <a href="javascript:void(0)" class="btn-cart">
+                                <i class="fas fa-minus text-info"></i>
+                              </a>
+                              1
+                              <a href="javascript:void(0)" class="btn-cart">
+                                <i class="fas fa-plus text-info"></i>
+                              </a>
+                            </td>
+                            <td class="text-end">50.000<sup>đ</sup></td>
+                            <td class="text-end">
+                              <a href="javascript:void(0)" class="color-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteItemInCartModal">
+                                <i class="far fa-trash-alt" data-bs-placement="top" data-bs-toggle="tooltip" title="Xoá đồ ăn"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="btn-group">
+                        <div class="totalMoney">
+                          Tổng tiền:&nbsp; <span class="text-info">150.000<sup>đ</sup></span>
+                        </div>
+                        <div>
+                          <a href="javascript:void(0)" class="btn btn-md btn-secondary" data-bs-toggle="modal" data-bs-target="#confirmDeleteCartModal">
+                            <i class="far fa-trash-alt color-danger"></i>Xoá tất cả
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -308,39 +311,51 @@
                     <input type="text" class="form-control" value="Chung cư Phenikaa, Thạch Hoà, Thạch Thất, Hà Nội" readonly>
                   </fieldset>
                 </div>
-                <div class="col-md-12 text-end mt-2">
-                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12">
-                    <i class="fas fa-pencil-alt text-success"></i>Chỉnh sửa địa chỉ
-                  </a>
-                </div>
-              </form>
-            </div>
-
-            <!-- Shipping note -->
-            <div class="shipping-note">
-              <div class="row">
-                <div class="col-12">
-                  <h1 class="title fix-mb-title fix-mt-title">Ghi chú đơn hàng</h1>
-                </div>
-              </div>
-              <form class="row panel-form mx-0 m-mb-16">
                 <div class="form-group col-12 col-md-12 col-lg-12">
                   <fieldset>
-                    <legend>Nội dung</legend>
+                    <legend>Ghi chú</legend>
                     <input type="text" class="form-control">
                   </fieldset>
                 </div>
                 <div class="col-md-12 text-end mt-2">
-                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12 me-2">
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12 me-2" data-bs-toggle="modal" data-bs-target="#confirmCancelOrderInCartModal">
                     <i class="fas fa-ban color-danger"></i>Huỷ đơn hàng
                   </a>
-                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12">
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12 me-2">
+                    <i class="fas fa-pencil-alt text-success"></i>Chỉnh sửa địa chỉ
+                  </a>
+                  <a href="javascript:void(0)" class="btn btn-md btn-secondary m-mb-12" data-bs-toggle="modal" data-bs-target="#confirmOrderSuccessfullyModal">
                     <i class="fas fa-check text-success"></i>Xác nhận mua hàng
                   </a>
                 </div>
               </form>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal food detail -->
+  <div class="modal fade" id="foodDetailModal" tabindex="-1" aria-labelledby="foodDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="foodDetailModalLabel">Thông tin đồ ăn</h5>
+        </div>
+        <div class="modal-body">
+          <div class="flex">
+            <div class="icon-circle">
+              <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+            </div>
+            <div class="content-body">
+              <h3>Cơm hến xào</h3>
+              <p class="price">Giá: 40.000<sup>đ</sup></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
         </div>
       </div>
     </div>
@@ -381,6 +396,46 @@
             <i class="fas fa-check text-success"></i>Xác nhận
           </a>
           <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal cancel order -->
+  <div class="modal fade" id="confirmCancelOrderInCartModal" tabindex="-1" aria-labelledby="confirmCancelOrderInCartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmCancelOrderInCartModalLabel">Thông báo</h5>
+        </div>
+        <div class="modal-body">
+          Xác nhận huỷ đơn hàng?
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order successfully -->
+  <div class="modal fade" id="confirmOrderSuccessfullyModal" tabindex="-1" aria-labelledby="confirmOrderSuccessfullyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"></div>
+        <div class="modal-body text-center">
+          <h3><i class="bi bi-check2-circle"></i>Đặt hàng thành công!</h3>
+        </div>
+        <div class="modal-footer text-center pb-4">
+          <a href="javascript:void(0)" class="btn btn-md btn-secondary me-2">
+            <i class="far fa-file-alt text-info"></i>Xem đơn hàng
+          </a>
+          <a href="javascript:void(0)" class="btn btn-md btn-secondary">
+            <i class="fas fa-plus text-success"></i>Đặt đồ ăn
+          </a>
         </div>
       </div>
     </div>
