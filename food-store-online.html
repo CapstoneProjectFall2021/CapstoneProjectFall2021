@@ -504,7 +504,7 @@
                                     <h3>Nguyễn Ngọc Mỹ Linh</h3>
                                     <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :)))))))</p>
                                     <p class="order-report">
-                                      Đơn hàng: <a href="">#000022</a>
+                                      Đơn hàng: <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#orderDetailReportModal">#000022</a>
                                       <i class="bi bi-calendar3-week ms-2 me-1"></i>15-12-2020
                                       <i class="far fa-clock ms-2 me-1"></i>18:08:33
                                     </p>
@@ -523,7 +523,7 @@
                                     <h3>Nguyễn Văn Vinh</h3>
                                     <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :))))))). Giống thiệt , một giọt nước đóng chai và một giọt nước ao :)))))))</p>
                                     <p class="order-report">
-                                      Đơn hàng: <a href="">#000028</a>
+                                      Đơn hàng: <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#orderDetailReportModal">#000028</a>
                                       <i class="bi bi-calendar3-week ms-2 me-1"></i>19-12-2020
                                       <i class="far fa-clock ms-2 me-1"></i>18:08:00
                                     </p>
@@ -625,6 +625,53 @@
             <i class="fas fa-check text-success"></i>Xác nhận
           </a>
           <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order detail -->
+  <div class="modal fade" id="orderDetailReportModal" tabindex="-1" aria-labelledby="orderDetailReportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderDetailReportModalLabel">Chi tiết đơn hàng <span class="text-info">#000028</span></h5>
+        </div>
+        <div class="modal-body">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên đồ ăn</th>
+                <th scope="col" class="text-center">Số lượng</th>
+                <th scope="col" class="text-center">Đơn giá</th>
+                <th scope="col" class="text-end">Tổng tiền</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="">Cơm hến xào</a></td>
+                <td class="text-center">1</td>
+                <td class="text-center">35.000<sup>đ</sup></td>
+                <td class="text-end">35.000<sup>đ</sup></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="">Trà ô long</a></td>
+                <td class="text-center">2</td>
+                <td class="text-center">25.000<sup>đ</sup></td>
+                <td class="text-end">50.000<sup>đ</sup></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="report-order mt-3">
+            <i class="bi bi-calendar3-week ms-2 me-1"></i>19-12-2020
+            <i class="far fa-clock ms-3 me-1"></i>18:08:00
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
       </div>
     </div>

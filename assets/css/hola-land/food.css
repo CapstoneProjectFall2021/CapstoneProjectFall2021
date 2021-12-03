@@ -332,6 +332,7 @@
 
 /* Online store order ===============================================================================*/
 
-.contact-mobile {
+.contact-mobile,
+.report-order {
   color: var(--secondary-text);
 }
