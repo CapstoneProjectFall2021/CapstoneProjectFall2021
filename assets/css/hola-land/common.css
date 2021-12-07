@@ -589,7 +589,7 @@
   transition: 0.2s;
   display: block;
   color: var(--primary-text);
-  border-radius: var(--third-border-radius);
+  border-radius: var(--primary-border-radius);
   display: flex;
   align-items: center;
   transition: 0.3s;
@@ -612,7 +612,7 @@
 .col-left>ul.sub-menu>li a:hover {
   /* color: #f1b200; */
   background-color: var(--link-secondary-button-background);
-  border-radius: var(--secondary-border-radius);
+  border-radius: var(--primary-border-radius);
 }
 
 .col-left>ul.sub-menu>li a:hover i {
@@ -622,7 +622,7 @@
 .col-left>ul.sub-menu>li a.active {
   /* color: #f1b200; */
   background-color: var(--link-secondary-button-background);
-  border-radius: var(--secondary-border-radius);
+  border-radius: var(--primary-border-radius);
 }
 
 .col-left>ul.sub-menu>li a.active i {
@@ -860,7 +860,7 @@
 .label-info .flex .icon-s img {
   border-radius: var(--secondary-border-radius);
   margin-right: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   width: 52px;
   height: 52px;
 }
@@ -1070,13 +1070,13 @@
 .btn-sm {
   border-radius: var(--third-border-radius);
   font-size: 16px;
-  padding: 6px 15px;
+  padding: 6px 16px;
 }
 
 .btn-md {
   border-radius: var(--secondary-border-radius);
   font-size: 16px;
-  padding: 9px 18px;
+  padding: 8px 18px;
 }
 
 .btn-lg {
